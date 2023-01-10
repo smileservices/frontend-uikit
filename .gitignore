@@ -1,0 +1,6 @@
+venv
+*.pyc
+*.log
+/static/css/
+/static/js/
+/node_modules/

@@ -1,0 +1,95 @@
+.navbar-logo {
+  padding: $padding-unit*2 $padding-unit-big/2;
+  padding-left: 0;
+  line-height: $fontsize-big;
+}
+
+nav {
+  line-height: $fontsize-big;
+  font-size: $fontsize-big;
+  font-weight: 700;
+  overflow: hidden;
+  display: grid;
+  justify-content: space-between;
+  padding: $nav-padding;
+  white-space: nowrap;
+
+  grid-template-areas: "logo searchbar searchbar searchbar profile";
+
+  #nav-logo {
+    grid-area: logo;
+    margin: -$nav-padding;
+    align-items: center;
+  }
+
+  #search-bar-app {
+    grid-area: searchbar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #profile-app {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: $nav-padding;
+    }
+
+    .dropdown-button-icon {
+      font-size: 3.25rem;
+    }
+  }
+
+  .signed-out-button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    width: 132px;
+  }
+
+  a {
+    display: inline-block;
+    padding: $nav-padding;
+    text-decoration: none;
+    color: $color-text-white;
+  }
+
+  a.collapse-button {
+    padding: $padding-unit*2 0;
+  }
+
+  a.mobile-collapse-button {
+    padding: $padding-unit*2 0;
+  }
+
+  a, a:visited, a:active {
+    color: $color-text-white;
+  }
+
+  a > svg {
+    fill: $color-text-white;
+  }
+
+  a:hover {
+    color: $color-text-white;
+  }
+
+  a:hover > svg {
+    fill: $color-text-white;
+  }
+
+  .left-side, .right-side {
+    display: flex;
+  }
+
+  .dropdown .dropdown-menu {
+    top: 4.25rem;
+    right: 1rem;
+  }
+
+}
+

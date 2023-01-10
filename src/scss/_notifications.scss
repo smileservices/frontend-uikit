@@ -1,0 +1,51 @@
+$color-critical: #ff5757;
+
+.notifications {
+  &.unseen {
+    position: absolute;
+    right: -0.25rem;
+    font-size: 0.8rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: $color-critical;
+    color: $color-text-white;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+ &.menu-item {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: $color-background-1;
+   .unseen {
+     padding: 0.1rem 0.5rem;
+     background-color: $color-critical;
+   }
+ }
+}
+
+.notifications {
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    gap: $padding-unit-big*1.5;
+    padding: $padding-unit $padding-unit-big;
+    background-color: #2c2e41;
+    border-radius: $radius-medium;
+
+    &.unseen {
+      background-color: #1a214f;
+    }
+
+    .date {
+      color: $color-text-grey;
+      white-space: nowrap;
+    }
+
+    .message {
+      color: $color-text-white;
+    }
+  }
+}

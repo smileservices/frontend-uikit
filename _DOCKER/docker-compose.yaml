@@ -1,0 +1,13 @@
+version: "3.7"
+
+# this is only for running tests
+
+services:
+
+  uikit-nginx-server:
+    build: nginx/
+    ports:
+      - "8080:80"
+    volumes:
+      - ../static/:/www-data/
+    restart: always

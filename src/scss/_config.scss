@@ -1,0 +1,81 @@
+$fontsize-big: 1rem !default;                   //16px
+$fontsize-md: $fontsize-big * 0.875 !default;   //14px
+$fontsize-sm: $fontsize-big * 0.75 !default;    //12px
+$fontsize-tn: $fontsize-big * 0.625 !default;   //10px
+
+$lineheight-base: $fontsize-big * 1.375 !default;  //22px
+
+
+$padding-unit: $fontsize-big * 0.625; //10px
+$padding-unit-big: $fontsize-big;     //16px
+$padding-unit-md: $fontsize-sm;       //12px
+$padding-unit-sm: $fontsize-tn * 0.8;       //8px
+
+$card-padding: $padding-unit-md;
+
+//radius
+$radius-small: 4px;
+$radius-medium: 6px;
+$radius-big: 8px;
+
+//colors
+$color-background: #FFF8E1;
+$color-background-1: #C0DEFF;
+$color-background-2: #ADA2FF;
+$color-background-3: #5547af;
+$color-background-4: #2d2565;
+$color-background-5: #34149f;
+$color-text-white: #efefef;
+$color-text-grey: #7D829E;
+$color-text-grey-2: #96A4FF;
+$color-blue: #576EFF;
+$color-dark-blue: darken($color-blue, 20);
+$color-blue-hover: #3EABEF;
+$color-blue-clicked: #118AD4;
+$color-blue-disabled: fade_in($color-blue-clicked, 0.5);
+$color-status-active: #179617;
+$color-status-inactive: #ce2a2a;
+$color-red: #ce2a2a;
+$color-yellow: #efec15;
+
+// text and general elements
+$theme-color-main: #1A1A1A;
+$theme-color-main-contrast: #B8C0C5;
+
+// for special elements like buttons
+$theme-color-accent: #309287;
+
+//important elements color scheme
+//navbar
+$nav-padding: $padding-unit-md;
+$nav-height: $fontsize-big*2 + $nav-padding*2;
+
+
+//dropdowns
+$dropdown-bg: lighten($theme-color-main, 10);
+$dropdown-text: lighten($theme-color-main-contrast, 10);
+$dropdown-hover-bg: darken($dropdown-bg, 10);
+$dropdown-hover-text: lighten($dropdown-text, 10);
+
+//sidebar
+$sidebar-width: $fontsize-big*14;
+
+//z-index
+$dropdown-zindex: 20000;
+$sidebar-zindex: 10000;
+$navbarsearch-zindex: 11000;
+$collapsible-zindex: 90000;
+$modal-backdrop-zindex: 95000;
+$modal-content-zindex: 96000;
+$top-level: 97000;
+$header-zindex: 1;
+
+//width layouts
+$width-sm: 450px;
+$width-md: 650px;
+$width-lg: 850px;
+$width-xl: 1050px;
+
+// new colors
+$sidebar-background: $color-background-1;
+$sidebar-border: #1E1E2B;

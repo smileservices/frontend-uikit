@@ -1,0 +1,347 @@
+@media only screen and (min-width: 1600px) {
+  main .detail-page.resource {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "detail related";
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .detail-page.resource .right-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'collections related';
+  }
+  #sidebar-app {
+    .top-section .collapse-button {
+      display: none;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  main .collapsible .collapse-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  main {
+    padding: 2rem 2rem 2rem 5rem !important;
+  }
+
+  footer {
+    padding: 3.75rem 3.75rem 3.75rem 6rem !important;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  nav .collapsible .collapse-toggle {
+    display: none;
+  }
+  #filters-container {
+    .filters-list {
+      display: flex;
+    }
+
+    .show-container {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  nav {
+    .right-side .login-button {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  //hide fixed sidebar
+  body {
+    padding-left: 0;
+
+    nav {
+      margin-left: 0;
+    }
+
+    aside.sidebar {
+      display: none;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  main {
+    padding: 0.75rem !important;
+
+    #homepage-app {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .search-page {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .detail-page {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collapsible:not(.show) .collapsible-content {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 365px) {
+  nav {
+    .left-side {
+      .mid-screen-buttons {
+        display: flex;
+        gap: 4px;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+
+        a {
+          width: unset !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 364px) {
+  nav {
+    .left-side {
+      .mid-screen-buttons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 365px) {
+  nav {
+    .xs-screen-buttons {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 364px) {
+  nav {
+    .xs-screen-buttons {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      a {
+        width: 86% !important;
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  header {
+    clip-path: none;
+    padding: 0;
+    height: auto;
+
+    .content {
+      margin: 1rem auto;
+
+      section.search-bar {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  main {
+    padding: 0.5rem !important;
+  }
+
+  nav {
+    display: grid;
+    margin-bottom: 0px !important;
+    grid-template-areas: "logo profile"
+                          "searchbar searchbar";
+
+    #search-bar-app {
+      width: 100%;
+      margin-top: $padding-unit-big;
+
+      form {
+        width: 100%;
+      }
+
+      .navbar-input-container {
+        justify-content: center;
+        gap: 12px;
+        align-items: center;
+
+        .navbar-search-input {
+          // position: absolute;
+          top: $nav-height;
+          left: 0;
+          width: 100%;
+          width: -moz-available; /* WebKit-based browsers will ignore this. */
+          width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+          width: fill-available;
+          margin: $padding-unit 0;
+        }
+
+        .icon-search {
+          top: 14px;
+        }
+      }
+
+      .navbar-search-results-overlay {
+        top: 8.4rem;
+        width: 95%;
+      }
+    }
+  }
+
+  nav .collapsible {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  nav .collapsible.collapse-toggle {
+    display: block;
+  }
+
+  nav .collapsible.show .collapsible-links {
+    z-index: $collapsible-zindex;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    background-color: $color-background-1;
+    width: 100%;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  nav .collapsible:not(.show) .collapsible-links {
+    display: none;
+  }
+
+  .search-bar-big {
+    form > input {
+      font-size: $fontsize-md*2;
+    }
+
+    form > .search-overlay {
+      right: $padding-unit-big;
+      top: 0.875rem;
+      // font-size: $fontsize-md*2;
+    }
+  }
+
+  #filters-container {
+    .filters-list {
+      display: none;
+    }
+
+    .show-container {
+      display: flex;
+    }
+  }
+  aside.sidebar.expanded #sidebar-app {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body.sidebar-visible-mobile {
+    aside.sidebar {
+      display: block;
+    }
+  }
+
+  aside.sidebar.expanded #sidebar-app {
+    .categories {
+      display: none;
+    }
+
+    .category-detail {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  body.sidebar-visible {
+    aside.sidebar {
+      display: block;
+
+      #sidebar-app .category-detail {
+        width: 60vw;
+      }
+    }
+  }
+
+  aside.sidebar.expanded #sidebar-app {
+    .category-detail-mobile {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 473px) {
+  nav {
+    .dropdown .dropdown-menu {
+      top: 4.25rem;
+      left: 0;
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+
+  .tab-navigation {
+    .tab-headers {
+      gap: $padding-unit-md;
+    }
+
+    .tab-headers > * {
+      font-size: $fontsize-md;
+    }
+  }
+  .search-bar-big {
+    form > input {
+      height: $fontsize-big*3;
+      font-size: $fontsize-big;
+    }
+
+    form > .search-overlay {
+      right: $padding-unit-big;
+      top: 0.875rem;
+    }
+  }
+  .filters .filter-select {
+    width: 100%;
+  }
+  aside.sidebar #sidebar-app {
+    .category-detail {
+      width: 50%
+    }
+  }
+}
