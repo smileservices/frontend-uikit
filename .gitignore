@@ -4,3 +4,4 @@ venv
 /static/css/
 /static/js/
 /node_modules/
+/.idea

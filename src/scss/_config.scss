@@ -1,14 +1,14 @@
-$fontsize-big: 1rem !default;                   //16px
-$fontsize-md: $fontsize-big * 0.875 !default;   //14px
-$fontsize-sm: $fontsize-big * 0.75 !default;    //12px
-$fontsize-tn: $fontsize-big * 0.625 !default;   //10px
+$fontsize-big: 1rem !default;                      //16px
+$fontsize-md: $fontsize-big * 0.875 !default;      //14px
+$fontsize-sm: $fontsize-big * 0.75 !default;       //12px
+$fontsize-tn: $fontsize-big * 0.625 !default;      //10px
 
-$lineheight-base: $fontsize-big * 1.375 !default;  //22px
+$lineheight-base: $fontsize-big * 1.375 !default;   //22px
 
-$padding-unit: $fontsize-big * 0.625; //10px
-$padding-unit-big: $fontsize-big;     //16px
-$padding-unit-md: $fontsize-sm;       //12px
-$padding-unit-sm: $fontsize-tn * 0.8;       //8px
+$padding-unit: $fontsize-big * 0.625;               //10px
+$padding-unit-big: $fontsize-big;                   //16px
+$padding-unit-md: $fontsize-sm;                     //12px
+$padding-unit-sm: $fontsize-tn * 0.8;               //8px
 $card-padding: $padding-unit-md;
 
 //radius
@@ -61,9 +61,8 @@ $nav-height: $fontsize-big*2 + $nav-padding*2;
 //sidebar
 $sidebar-background: $color-background-1;
 $sidebar-border: $color-background-5;
-$sidebar-width: $fontsize-big*14;
-
 $sidebar-text-color: $color-text;
+$sidebar-width: $fontsize-big*14;
 
 //footer
 $footer-background: $color-background-5;
