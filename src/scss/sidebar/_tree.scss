@@ -22,12 +22,12 @@
 
     div.parent.expanded.open-details {
       background-color: #576EFF;
-      border-radius: 1px;
+      border-radius: $radius-small;
     }
 
     div.parent.open-details {
       background-color: #576EFF;
-      border-radius: 1px;
+      border-radius: $radius-small;
     }
 
     div.parent:hover {

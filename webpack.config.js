@@ -7,16 +7,16 @@ module.exports = (env, argv) => ({
         // just create the react-bundle once
 
         //for dev
-        'static/js/react-bundle': argv.mode === 'production'
-            ? ['./app/static/react_files/react.min.js', './app/static/react_files/react-dom.min.js']
-            : ['./app/static/react_files/react.development.js', './app/static/react_files/react-dom.development.js'],
+        'react-bundle': argv.mode === 'production'
+            ? ['./static/react_files/react.min.js', './static/react_files/react-dom.min.js']
+            : ['./static/react_files/react.development.js', './static/react_files/react-dom.development.js'],
 
         //mapping of <js file destination>: <react source>
-        '/static/js/homepage-app': './app/frontend/src/HomepageApp.js',
+        'forms_create_javascript_app': './src/example_js_app/FormsCreateJavascriptApp.js',
     },
     output: {
         filename: '[name].js',
-        path: __dirname + '/app/'
+        path: __dirname + '/static/js/'
     },
     module: {
         rules: [

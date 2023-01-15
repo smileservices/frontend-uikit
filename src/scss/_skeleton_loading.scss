@@ -13,7 +13,7 @@
     height: $padding-unit-md*2+$fontsize-md;
     margin-bottom: $padding-unit;
     max-width: $fontsize-big*13;
-    border-radius: 1.5rem;
+    border-radius: $radius-big;
   }
 
   &.result {
@@ -33,7 +33,7 @@
   &.header {
     height: $padding-unit-big + $fontsize-big;
     margin-bottom: $padding-unit-big;
-    border-radius: 1.5rem;
+    border-radius: $radius-big;
 
     &.sm {
       width: $fontsize-big*10;
@@ -51,7 +51,7 @@
   &.tag {
     height: $fontsize-big;
     width: $fontsize-big*4;
-    border-radius: 1.5rem;
+    border-radius: $radius-big;
   }
 
   &.result-minimal {

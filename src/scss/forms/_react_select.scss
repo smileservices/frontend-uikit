@@ -1,5 +1,5 @@
 .react-select {
-  color: $color-text-c2;
+  color: $color-text;
   font-size: $fontsize-md;
 
   .form-control__placeholder {
@@ -17,7 +17,7 @@
   }
 
   .form-control__value-container, .form-control__single-value {
-    color: $color-text-c;
+    color: $color-text;
   }
 
   .form-control__value-container, .form-control__value-container--is-multi {
@@ -30,41 +30,41 @@
   }
 
   .form-control__multi-value__label {
-    color: $color-text-c2;
+    color: $color-text;
   }
 
   .form-control__input {
-    color: $color-text-c;
+    color: $color-text;
   }
 
   .form-control__control--is-disabled {
-    background-color: var(--color-background-2);
+    background-color: $color-background-1;
 
     .form-control__indicator.form-control__dropdown-indicator {
-      color: $color-background-4;
+      color: $color-background-1;
     }
 
     .form-control__value-container {
-      background-color: $color-background-2;
+      background-color: $color-background-1;
 
       .form-control__single-value {
-        color: $color-background-4;
+        color: $color-background-1;
         font-style: italic;
       }
     }
   }
 
   .form-control__multi-value__remove {
-    color: $color-text-c2;
+    color: $color-text;
     cursor: pointer;
   }
 
   .form-control__menu {
-    background-color: $color-background-3;
+    background-color: $color-background-1;
     border-radius: $radius-big;
 
     .form-control__option, .form-control__option--is-selected {
-      color: $color-text-c;
+      color: $color-text;
     }
 
     .form-control__option--is-focused {

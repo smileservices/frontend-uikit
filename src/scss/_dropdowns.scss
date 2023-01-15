@@ -15,7 +15,7 @@ $color-dropdown-hover: #373E7A;
   font-weight: 400;
   background-color: $color-background;
   color: white;
-  border-radius: 0.5rem;
+  border-radius: $radius-medium;
 
   .other-menu-items {
     display: flex;

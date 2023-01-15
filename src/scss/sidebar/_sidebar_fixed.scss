@@ -244,7 +244,7 @@ aside.sidebar.expanded {
         min-width: 212px;
         min-height: 72px;
         background: #363845;
-        border-radius: 8px;
+        border-radius: $radius-big;
         cursor: pointer;
 
         .contribute {

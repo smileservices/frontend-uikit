@@ -2,7 +2,7 @@
   position: relative;
   background-color: $color-background-1;
   padding: $padding-unit;
-  border-radius: $border-radius-lg;
+  border-radius: $radius-big;
 
   .header {
     margin-bottom: 2rem;
@@ -89,7 +89,7 @@ form {
   .ss-single-selected, .ss-multi-selected {
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    border-radius: 0.25rem;
+    border-radius: $radius-medium;
   }
 }
 
@@ -100,5 +100,5 @@ textarea {
 @import "rating";
 @import "multistep";
 @import "image_input";
-@import "react_select";
+//@import "react_select";
 @import "bootstrap_forms";
