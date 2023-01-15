@@ -1,0 +1,14 @@
+// overriding Bootstrap forms
+.form-control {
+  background-color: $color-background-2;
+  color: $color-text-c;
+  border: 1px solid $color-background-1;
+  width: auto;
+}
+
+.form-control:focus {
+  color: $color-text;
+  background-color: $color-background-1;
+  border-color: $theme-color-accent;
+  box-shadow: 0 0 0 0.10rem transparentize($theme-color-accent, 0.3);
+}

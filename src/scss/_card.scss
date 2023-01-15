@@ -19,7 +19,7 @@
                 line-height: 22px;
                 font-weight: bold;
                 a, a:visited {
-                    color: $color-text-white;
+                    color: $color-text-c;
                 }
             }
 
@@ -27,7 +27,7 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 22px;
-                color: $color-text-grey;
+                color: $color-text-c1;
             }
         }
     
@@ -35,7 +35,7 @@
             p {
                 font-size: 14px;
                 line-height: 22px;
-                color: $color-text-grey;
+                color: $color-text-c1;
                 font-weight: 500;
             }
         }
@@ -47,21 +47,21 @@
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 22px;
-                color: $color-text-white;
+                color: $color-text-c;
             }
             p {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 22px;
-                color: $color-text-grey;
+                color: $color-text-c1;
     
                 a {
-                    color: $color-text-grey-2 !important;
+                    color: $color-text-c2 !important;
                 }
     
                 a:hover {
                     cursor: pointer;
-                    color: $color-blue !important;
+                    color: $theme-color-main-c !important;
                 }
             }
         }

@@ -20,22 +20,22 @@ ul.pagination {
     background-color: $color-background-1;
 
     &:hover {
-      color: $color-blue !important;
+      color: $theme-color-main-c !important;
       background-color: $color-background-1;
     }
   }
 
   li.active {
-    color: $color-text-white;
-    background-color: $color-blue;
+    color: $color-text-c;
+    background-color: $theme-color-main-c;
     pointer-events: none;
   }
 
   //li.arrow {
-  //  color: $color-blue !important;
+  //  color: $theme-color-main-c !important;
   //}
   //
   //li.arrow:hover {
-  //  color: $color-text-white !important;
+  //  color: $color-text-c !important;
   //}
 }

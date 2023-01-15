@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/icomoon_fonts/style.css">
+
+</head>
+<body>
+
+<nav>
+    <div class="left-side" id="nav-logo">
+        <a rel="nofollow noopener" href="#" onclick="toggle_sidebar()" class="collapse-button">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </a>
+        <a class="navbar-logo" href="/static">UI.kit</a>
+    </div>
+    <div id="profile-app">
+        <div class="dropdown">
+            <span class="btn secondary dropdown-button">Dropdown</span>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown-button">
+                <span class="dropdown-button-icon icon-person-circle"></span>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar">
+
+        <div id="sidebar-app">
+            <div class="categories">
+                <div class="top-section"><a href="/static" class="navbar-logo">UI.kit</a>
+                    <a href="#" onclick="toggle_sidebar()" rel="nofollow noopener" class="collapse-button">
+                        <span class="icon-close close-icon"></span>
+                    </a>
+                </div>
+                <h3 class="sidebar-title">Sidebar Section</h3>
+
+                <ul class="tree">
+                    <li>
+                        <div class=" parent  "><span>Buttons</span><span></span></div>
+                    </li>
+                </ul>
+
+                <ul class="tree">
+                    <li><span class="icon-arrow_drop_down expander"></span>
+                        <div class=" parent expanded "><span>Cards</span><span>1</span></div>
+                    </li>
+                    <li class="children">
+                        <ul class="tree">
+                            <li>
+                                <div class="has-parent-margin parent  "><span><a href="/pages/cards.html">Containers</a></span><span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="tree">
+                    <li>
+                        <div class=" parent  "><span><a href="/pages/forms.html">Forms</a></span><span></span></div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</aside>
+
+
+<main>
+    <section class="header">
+        <h1>The Forms</h1>
+    </section>
+
+    <div class="breadcrumbs">
+        <a href="/static">Homepage</a> &gt; Forms
+    </div>
+
+    <section>
+        <h2 class="header">A form container</h2>
+        <div class="form-container full-page-md">
+            <form action="#">
+                <div class="form-group">
+                    <label for="text-input">Input</label>
+                    <input type="text" name="text-input1" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="form-group row">
+                        <label for="text-input">Input in row</label>
+                        <input type="text" name="text-input2" class="form-control">
+                    </div>
+                    <div class="form-group row">
+                        <label for="text-input">Input in row</label>
+                        <input type="text" name="text-input2" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text-input">Input in row</label>
+                    <input type="text" name="text-input2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="text-input">Textarea</label>
+                    <textarea name="textarea" class="form-control"></textarea>
+                </div>
+                <div class="buttons-container">
+                    <button type="submit" class="btn light submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <section class="about column-container">
+        <header>UI kit Footer</header>
+        <p>
+            Enjoy having all the elements into one place.
+        </p>
+        <div class="button-links-container">
+            <a href="https://www.facebook.com/groups/noodles.dev" rel="nofollow noopener"
+               class="uikit-button filled default">
+                Join our Facebook Group!
+            </a>
+            <a href="/backstage" rel="nofollow noopener" class="uikit-button outlined white">
+                Some CTA
+            </a>
+        </div>
+    </section>
+
+    <section class="links column-container">
+        <h4 class="header">UI Kit</h4>
+        <a href=#>About</a>
+        <a href=#>Technologies</a>
+        <a href=#>General Concepts</a>
+        <a href=#>Implementation Concepts</a> <a href=#>Resources</a>
+        <a href=#>Collections</a>
+    </section>
+
+    <section class="social column-container">
+        <div class="links">
+            <h4 class="header">Links</h4>
+            <a href=# rel="nofollow noopener">Privacy Policy</a>
+            <a href=# rel="nofollow noopener">Terms and Conditions</a>
+            <a href=# rel="nofollow noopener">Cookies Policy</a>
+        </div>
+        <div class="socials">
+            <a href="#"><span class="icon icon-facebook"></span></a>
+            <span class="icon icon-twitter"></span>
+            <a href="#"><span class="icon icon-linkedin"></span></a>
+            <span class="icon icon-telegram1"></span>
+            <span class="icon icon-reddit-alien"></span>
+        </div>
+    </section>
+</footer>
+
+
+<script>
+
+    window.addEventListener('load', e => {
+        document.querySelectorAll('.collapsible .collapse-toggle').forEach(el => el.onclick = evt => {
+            evt.preventDefault();
+            evt.target.closest('.collapsible').classList.toggle('show');
+        });
+    });
+
+    function toggle_sidebar() {
+        if (innerWidth > 600) {
+            document.querySelector('body').classList.toggle('sidebar-visible');
+        } else {
+            document.querySelector('body').classList.toggle('sidebar-visible-mobile');
+        }
+    }
+
+</script>
+</body>
+</html>

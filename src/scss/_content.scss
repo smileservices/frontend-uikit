@@ -3,7 +3,7 @@
   margin: $padding-unit-big 0;
   text-align: center;
   padding: $padding-unit-big;
-  color: $color-blue;
+  color: $theme-color-main-c;
   border: 1px solid;
   border-radius: $radius-medium;
 
@@ -16,7 +16,7 @@
   display: block;
   text-align: center;
   padding: $padding-unit-sm;
-  color: $color-blue;
+  color: $theme-color-main-c;
 
   span {
     margin: 0 $padding-unit-sm;
@@ -54,7 +54,7 @@ section.header {
     font-size: 0.9rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    color: $color-blue;
+    color: $theme-color-main-c;
   }
 
   > a.delete {
@@ -81,7 +81,7 @@ section.header {
     font-size: 0.9rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    color: $color-blue;
+    color: $theme-color-main-c;
   }
 
   > span:hover {
@@ -101,18 +101,18 @@ section.header {
   }
 
   .option:hover {
-    color: $color-blue;
-    border-bottom: 1px solid $color-blue;
+    color: $theme-color-main-c;
+    border-bottom: 1px solid $theme-color-main-c;
     cursor: pointer;
   }
 }
 
 .rating {
   font-size: $fontsize-sm;
-  color: $color-text-white;
+  color: $color-text-c;
 
   a {
-    color: $color-blue;
+    color: $theme-color-main-c;
   }
 
   .stars {
@@ -139,16 +139,16 @@ section.header {
   }
 
   a, a:visited {
-    color: $color-text-white;
+    color: $color-text-c;
   }
 
   a:hover {
-    color: $color-blue;
+    color: $theme-color-main-c;
   }
 
   .voted {
     a, a:visited {
-      color: $color-blue;
+      color: $theme-color-main-c;
     }
   }
 }
@@ -166,15 +166,15 @@ img {
 
 .read-more {
   margin-left: $padding-unit;
-  color: $color-blue;
+  color: $theme-color-main-c;
   cursor: pointer;
 }
 
 .semi-footer {
   margin: $padding-unit-big*4 0 $padding-unit-big*2;
   padding: $padding-unit-big $padding-unit-md*2 $padding-unit-big*2;
-  background-color: $color-blue;
-  color: $color-text-white;
+  background-color: $theme-color-main-c;
+  color: $color-text-c;
   font-size: $fontsize-md;
   border-radius: $radius-big;
 
@@ -184,7 +184,7 @@ img {
 }
 
 .icon-info {
-  color: $color-text-grey;
+  color: $color-text-c1;
   margin-left: $padding-unit;
   cursor: pointer;
 }
@@ -199,7 +199,7 @@ img {
   border-radius: 5px;
   background-color: $color-background;
   content: attr(data-tooltip);
-  color: $color-text-grey-2;
+  color: $color-text-c2;
   position: absolute;
   bottom: 100%;
   width: $fontsize-md*15;
@@ -251,12 +251,12 @@ img {
     align-items: baseline;
 
     label {
-      color: $color-text-grey;
+      color: $color-text-c1;
     }
 
     div {
       background-color: $color-background;
-      color: $color-text-white;
+      color: $color-text-c;
       padding: 12px;
       border-radius: 4px;
       display: flex;
@@ -277,19 +277,19 @@ img {
     }
 
     .sort-direction {
-      color: $color-text-white;
+      color: $color-text-c;
       cursor: pointer;
     }
 
     .sort-direction:hover {
-      color: $color-blue;
+      color: $theme-color-main-c;
     }
   }
 
 }
 
 .blue {
-  color: $color-blue;
+  color: $theme-color-main-c;
 }
 
 .resource.sortableHelper {

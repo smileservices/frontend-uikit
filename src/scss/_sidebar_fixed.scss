@@ -41,7 +41,7 @@ aside.sidebar {
       font-weight: bold;
       font-size: 1.4rem;
       line-height: 22px;
-      color: $color-text-white;
+      color: $color-text-c;
 
       .close-icon {
         font-size: 20px;
@@ -202,7 +202,7 @@ aside.sidebar.expanded {
         }
 
         .view-more {
-          color: $color-text-grey-2;
+          color: $color-text-c2;
           font-weight: 600;
         }
       }
@@ -252,11 +252,11 @@ aside.sidebar.expanded {
           .technology {
             .text {
               .name {
-                color: $color-text-white;
+                color: $color-text-c;
               }
   
               .category {
-                color: $color-text-grey-2;
+                color: $color-text-c2;
                 font-size: $fontsize-sm;
               }
             }
@@ -283,7 +283,7 @@ aside.sidebar.expanded {
       .add-concept-btn {
         background: #363845;
         border-radius: 64px;
-        color: $color-text-grey-2;
+        color: $color-text-c2;
         padding: 4px 1rem;
         font-family: Noto Sans;
         font-style: normal;
@@ -303,7 +303,7 @@ aside.sidebar.expanded {
         cursor: pointer;
 
         .contribute {
-          color: $color-text-grey-2;
+          color: $color-text-c2;
         }
       }
     }
@@ -376,7 +376,7 @@ aside.sidebar.expanded {
         }
 
         .view-more {
-          color: $color-text-grey-2;
+          color: $color-text-c2;
           font-weight: 600;
         }
       }
@@ -398,7 +398,7 @@ aside.sidebar.expanded {
         }
 
         .empty-text {
-          color: $color-text-grey;
+          color: $color-text-c1;
           font-size: 14px;
           line-height: 22px;
           font-weight: 400;
@@ -406,7 +406,7 @@ aside.sidebar.expanded {
         }
 
         a.add-text {
-          color: $color-text-grey-2;
+          color: $color-text-c2;
           font-style: normal;
           font-weight: 600;
           font-size: 14px;
@@ -465,11 +465,11 @@ aside.sidebar.expanded {
           .technology {
             .text {
               .name {
-                color: $color-text-white;
+                color: $color-text-c;
               }
   
               .category {
-                color: $color-text-grey-2;
+                color: $color-text-c2;
                 font-size: $fontsize-sm;
               }
             }
@@ -496,7 +496,7 @@ aside.sidebar.expanded {
       .add-concept-btn {
         background: #363845;
         border-radius: 64px;
-        color: $color-text-grey-2;
+        color: $color-text-c2;
         padding: 4px 1rem;
         font-family: Noto Sans;
         font-style: normal;
@@ -516,7 +516,7 @@ aside.sidebar.expanded {
         cursor: pointer;
 
         .contribute {
-          color: $color-text-grey-2;
+          color: $color-text-c2;
         }
       }
     }
@@ -524,14 +524,14 @@ aside.sidebar.expanded {
     .minimize {
       font-size: $fontsize-big;
       padding: $padding-unit-md;
-      background-color: $color-dark-blue;
+      background-color: $theme-color-main-c;
       position: absolute;
       right: 0;
       cursor: pointer;
     }
 
     .minimize:hover {
-      background-color: $color-blue;
+      background-color: $theme-color-main-c;
     }
   }
 }

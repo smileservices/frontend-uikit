@@ -5,12 +5,10 @@ $fontsize-tn: $fontsize-big * 0.625 !default;   //10px
 
 $lineheight-base: $fontsize-big * 1.375 !default;  //22px
 
-
 $padding-unit: $fontsize-big * 0.625; //10px
 $padding-unit-big: $fontsize-big;     //16px
 $padding-unit-md: $fontsize-sm;       //12px
 $padding-unit-sm: $fontsize-tn * 0.8;       //8px
-
 $card-padding: $padding-unit-md;
 
 //radius
@@ -19,46 +17,62 @@ $radius-medium: 6px;
 $radius-big: 8px;
 
 //colors
-$color-background: #FFF8E1;
-$color-background-1: #C0DEFF;
-$color-background-2: #ADA2FF;
-$color-background-3: #5547af;
-$color-background-4: #2d2565;
-$color-background-5: #34149f;
-$color-text-white: #efefef;
-$color-text-grey: #7D829E;
-$color-text-grey-2: #96A4FF;
-$color-blue: #576EFF;
-$color-dark-blue: darken($color-blue, 20);
-$color-blue-hover: #3EABEF;
-$color-blue-clicked: #118AD4;
-$color-blue-disabled: fade_in($color-blue-clicked, 0.5);
-$color-status-active: #179617;
-$color-status-inactive: #ce2a2a;
-$color-red: #ce2a2a;
-$color-yellow: #efec15;
+$theme-color-main: #f5f5f5;
+$theme-color-main-c: #737373;
+$theme-color-accent: #bdbdbd;
+$theme-color-accent-c: #e7e5e5;
 
-// text and general elements
-$theme-color-main: #1A1A1A;
-$theme-color-main-contrast: #B8C0C5;
+//colors text
+$theme-color-text: $theme-color-main-c;
+$theme-color-text-c: $theme-color-main;
 
-// for special elements like buttons
-$theme-color-accent: #309287;
+//colors functional
+$theme-color-clickme: green;
+$theme-color-info: blue;
+$theme-color-alert: orange;
+$theme-color-danger: red;
 
-//important elements color scheme
+// computed colors
+$color-background: $theme-color-main;
+$color-background-1: darken($theme-color-main, 5);
+$color-background-2: darken($theme-color-main, 10);
+$color-background-3: lighten($theme-color-main-c, 10);
+$color-background-4: lighten($theme-color-main-c, 5);
+$color-background-5: $theme-color-main-c;
+
+$color-text: $theme-color-text;
+$color-text-c: lighten($theme-color-text, 20);
+$color-text-c1: lighten($theme-color-text, 40);
+$color-text-c2: lighten($theme-color-text, 60);
+
+$color-status-active: $theme-color-clickme;
+$color-status-inactive: $theme-color-info;
+$color-red: $theme-color-danger;
+$color-yellow: $theme-color-alert;
+
+
+/* Important Elements Config */
+
 //navbar
+$navbar-background: $color-background;
 $nav-padding: $padding-unit-md;
 $nav-height: $fontsize-big*2 + $nav-padding*2;
+
+//sidebar
+$sidebar-background: $color-background-1;
+$sidebar-border: $color-background-5;
+$sidebar-width: $fontsize-big*14;
+
+//footer
+$footer-background: $color-background-5;
+$footer-text-color: $color-text-c1;
 
 
 //dropdowns
 $dropdown-bg: lighten($theme-color-main, 10);
-$dropdown-text: lighten($theme-color-main-contrast, 10);
+$dropdown-text: lighten($theme-color-main-c, 10);
 $dropdown-hover-bg: darken($dropdown-bg, 10);
 $dropdown-hover-text: lighten($dropdown-text, 10);
-
-//sidebar
-$sidebar-width: $fontsize-big*14;
 
 //z-index
 $dropdown-zindex: 20000;
@@ -75,7 +89,3 @@ $width-sm: 450px;
 $width-md: 650px;
 $width-lg: 850px;
 $width-xl: 1050px;
-
-// new colors
-$sidebar-background: $color-background-1;
-$sidebar-border: #1E1E2B;

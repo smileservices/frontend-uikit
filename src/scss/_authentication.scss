@@ -57,8 +57,8 @@ section.content {
   justify-content: center;
   gap: $padding-unit-md;
   margin: 0;
-  background-color: $color-blue;
-  color: $color-text-white;
+  background-color: $theme-color-main-c;
+  color: $color-text-c;
   padding: $fontsize-big/2 $fontsize-big*1.75;
   font-weight: 700 !important;
   border-radius: $radius-small;
@@ -68,7 +68,7 @@ section.content {
 
 .socialaccount_providers a.socialaccount_provider.google {
   background-color: #f3f6f6;
-  color: $color-blue;
+  color: $theme-color-main-c;
   border: 1px solid #f3f6f6;
 }
 
@@ -78,7 +78,7 @@ section.content {
 }
 
 a.socialaccount_provider:hover {
-  border-color: $color-blue;
+  border-color: $theme-color-main-c;
 }
 
 .email_list span {
@@ -101,7 +101,7 @@ a.socialaccount_provider:hover {
 
 .user-social-accounts span.socialaccount_provider {
   font-weight: bold;
-  color: $color-dark-blue;
+  color: $theme-color-main-c;
   margin-right: $padding-unit-big*2;
 }
 

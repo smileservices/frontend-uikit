@@ -1,0 +1,104 @@
+.form-container {
+  position: relative;
+  background-color: $color-background-1;
+  padding: $padding-unit;
+  border-radius: $border-radius-lg;
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: $padding-unit-big;
+    justify-content: end;
+  }
+}
+
+form {
+  margin: $padding-unit-big;
+  display: flex;
+  flex-direction: column;
+  gap: $padding-unit-md*2;
+
+  > * {
+    margin: 0;
+  }
+
+  .btn {
+    max-width: none;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+    > * {
+      flex-grow: 1;
+    }
+
+    .form-group input {
+      flex-grow: 0;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    label {
+      font-size: $fontsize-md;
+      margin-bottom: $padding-unit-md;
+    }
+
+    input {
+      flex-grow: 1;
+      height: fit-content;
+    }
+
+    input, textarea {
+      color: $color-text;
+    }
+  }
+
+  .form-group.row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+  }
+
+  button.submit {
+    align-self: flex-end;
+  }
+
+  .invalid-feedback {
+    display: block;
+  }
+
+  .form-control_invalid__control {
+    border-color: var(--color-text-red);
+  }
+
+}
+
+.form-group .ss-main {
+  .ss-single-selected, .ss-multi-selected {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-radius: 0.25rem;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+@import "rating";
+@import "multistep";
+@import "image_input";
+@import "react_select";
+@import "bootstrap_forms";

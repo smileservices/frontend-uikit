@@ -7,11 +7,11 @@ footer {
   margin-top: 3rem;
   min-height: 15rem;
   padding: $padding-unit*6;
-  background-color: #2E3146;
-  color: $color-text-grey;
+  background-color: $footer-background;
+  color: $footer-text-color;
 
   section header {
-    color: $color-text-white;
+    color: $color-text-c;
     font-weight: bold;
     font-size: 22px;
     line-height: 22px;

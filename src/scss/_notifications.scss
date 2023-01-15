@@ -9,7 +9,7 @@ $color-critical: #ff5757;
     height: 1.25rem;
     border-radius: 50%;
     background-color: $color-critical;
-    color: $color-text-white;
+    color: $color-text-c;
     text-align: center;
     line-height: 1.2rem;
   }
@@ -40,12 +40,12 @@ $color-critical: #ff5757;
     }
 
     .date {
-      color: $color-text-grey;
+      color: $color-text-c1;
       white-space: nowrap;
     }
 
     .message {
-      color: $color-text-white;
+      color: $color-text-c;
     }
   }
 }

@@ -42,7 +42,7 @@ h5 {
 
 a {
   text-decoration: none;
-  color: $color-text-grey-2;
+  color: $color-text-c2;
 }
 
 a:visited {
@@ -64,21 +64,17 @@ small, .small {
 
 .breadcrumbs {
   font-size: $fontsize-md;
-  color: $color-text-grey;
+  color: $color-text-c1;
   margin-bottom: $padding-unit*4;
 
   a, a:visited {
-      color: $color-text-grey-2;
+      color: $color-text-c2;
   }
 }
 
 .main-content {
   font-size: $fontsize-md;
   font-weight: 500;
-}
-
-.blue-text {
-  color: $color-blue;
 }
 
 .diff {

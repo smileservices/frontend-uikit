@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>63</x>
+      <y>70</y>
+      <w>546</w>
+      <h>658</h>
+    </coordinates>
+    <panel_attributes>Layout (content display)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>91</x>
+      <y>133</y>
+      <w>434</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>Navbar
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>63</x>
+      <y>777</y>
+      <w>546</w>
+      <h>679</h>
+    </coordinates>
+    <panel_attributes>Pages</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>91</x>
+      <y>301</y>
+      <w>434</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Sidebar
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>91</x>
+      <y>434</y>
+      <w>434</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Cards
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>686</x>
+      <y>560</y>
+      <w>546</w>
+      <h>469</h>
+    </coordinates>
+    <panel_attributes>User interraction (actionables)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>735</x>
+      <y>896</y>
+      <w>462</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Buttons
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>686</x>
+      <y>1078</y>
+      <w>539</w>
+      <h>357</h>
+    </coordinates>
+    <panel_attributes>Aknowledgements
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>700</x>
+      <y>1127</y>
+      <w>490</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Dialogues
+bg=yellow
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>700</x>
+      <y>1274</y>
+      <w>490</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Notifications
+bg=yellow
+layer=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>735</x>
+      <y>623</y>
+      <w>462</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>Forms
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>112</x>
+      <y>966</y>
+      <w>434</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Login
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>112</x>
+      <y>1078</y>
+      <w>434</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Verify email
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>112</x>
+      <y>1190</y>
+      <w>434</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Reset Password
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>112</x>
+      <y>1316</y>
+      <w>434</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Account management
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>686</x>
+      <y>70</y>
+      <w>546</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>Common Styling</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>749</x>
+      <y>105</y>
+      <w>434</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Typography
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>749</x>
+      <y>210</y>
+      <w>434</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Colors
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>749</x>
+      <y>378</y>
+      <w>434</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Spacing
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>112</x>
+      <y>833</y>
+      <w>434</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Homepage
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>112</x>
+      <y>504</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Images
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>112</x>
+      <y>161</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Logo
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>203</x>
+      <y>161</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Account Dropdown
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>343</x>
+      <y>161</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Login/Signup
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>112</x>
+      <y>336</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Hide/Show button
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>231</x>
+      <y>336</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>tree style links
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>210</x>
+      <y>476</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Header
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>112</x>
+      <y>476</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>content
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>210</x>
+      <y>504</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>title
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>756</x>
+      <y>658</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form container
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>882</x>
+      <y>658</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form labels
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>658</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form field - text
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>686</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form field - date
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>714</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form field - number
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>742</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form field - file
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>777</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form field - image
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>938</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>form submit
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>721</x>
+      <y>1309</y>
+      <w>182</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>dropdown with new notif icon
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>721</x>
+      <y>1155</y>
+      <w>182</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>floating window
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>140</x>
+      <y>1008</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>login form
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>133</x>
+      <y>1120</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>code form
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>133</x>
+      <y>1225</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>reset pass form
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>126</x>
+      <y>1351</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>update data form
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>133</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>font
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>161</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>font sizes
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>903</x>
+      <y>161</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>S
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>945</x>
+      <y>161</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>M
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>987</x>
+      <y>161</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>L
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1029</x>
+      <y>161</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>XL
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>903</x>
+      <y>133</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>header
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>959</x>
+      <y>133</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>content
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>238</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>background
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>266</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>text
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>770</x>
+      <y>406</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>padding
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>770</x>
+      <y>434</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>padding
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>910</x>
+      <y>406</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>S
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>952</x>
+      <y>406</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>M
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>994</x>
+      <y>406</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>L
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1036</x>
+      <y>406</y>
+      <w>35</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>XL
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>924</x>
+      <y>238</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>main
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>924</x>
+      <y>266</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>main-c
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>980</x>
+      <y>238</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>accent
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>980</x>
+      <y>266</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>accent-c
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>763</x>
+      <y>301</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>functional
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>959</x>
+      <y>301</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>info
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>301</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>alert
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1071</x>
+      <y>301</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>danger
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>903</x>
+      <y>301</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>clickme
+layer=1
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Package</type>
+    <coordinates>
+      <x>91</x>
+      <y>588</y>
+      <w>434</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Modals
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

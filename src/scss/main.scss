@@ -13,7 +13,7 @@
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: $color-background;
-  color: $color-text-white;
+  color: $theme-color-text;
 }
 
 @import "node_modules/bootstrap/scss/forms";
@@ -25,7 +25,7 @@ body {
 @import "modal";
 
 @import "footer";
-@import "forms";
+@import "forms/forms";
 @import "dropdowns";
 @import "layouts";
 

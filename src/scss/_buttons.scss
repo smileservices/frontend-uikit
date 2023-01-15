@@ -1,19 +1,19 @@
-$button-bg: $color-blue;
-$button-text: $color-text-white;
+$button-bg: $theme-color-main-c;
+$button-text: $color-text-c;
 $button-hover-bg: darken($button-bg, 20);
 $button-radius: 40px;
 
 $button-secondary-bg: $color-background-1;
-$button-secondary-text: $color-text-white;
+$button-secondary-text: $color-text-c;
 $button-secondary-hover-bg: $color-background;
 
-$button-light-bg: $color-text-white;
+$button-light-bg: $color-text-c;
 $button-light-text: $color-background-1;
-$button-light-hover-bg: $color-text-grey;
+$button-light-hover-bg: $color-text-c1;
 
 
 $button-dark-bg: $color-background-1;
-$button-dark-text: $color-text-white;
+$button-dark-text: $color-text-c;
 $button-dark-hover-bg: $color-background;
 
 .btn {

@@ -26,9 +26,9 @@ ul.category-tree {
     padding-bottom: $padding-unit-sm/2;
     padding-left: $padding-unit-sm/2;
     line-height: $lineheight-base*1.125;
-    color: $color-text-white;
+    color: $color-text-c;
     font-weight: 500;
-    border-left: 1px solid $color-text-grey;
+    border-left: 1px solid $color-text-c1;
   }
 
   li:last-child {
@@ -40,19 +40,19 @@ ul.category-tree {
     top: -$padding-unit-sm/2;
     height: $padding-unit-md;
     width: $padding-unit-big;
-    color: $color-text-white;
-    border-bottom: 1px solid $color-text-grey;
+    color: $color-text-c;
+    border-bottom: 1px solid $color-text-c1;
     content: "";
     display: inline-block;
     left: -$padding-unit-sm/2;
   }
 
   li:last-child:before {
-    border-left: 1px solid $color-text-grey;
+    border-left: 1px solid $color-text-c1;
   }
 
   li > a, li > a:visited {
-    color: $color-text-white;
+    color: $color-text-c;
   }
 
   li.active {

@@ -7,6 +7,14 @@ main {
 //  display: none;
 //}
 
+section {
+  margin: $padding-unit-big 0 $padding-unit-big*2;
+
+  .header {
+    margin: $padding-unit-big 0;
+  }
+}
+
 .vmargin-big {
   margin: $padding-unit-big 0;
 }
@@ -52,16 +60,16 @@ main {
     padding: $padding-unit-sm/2;
     font-size: $fontsize-tn;
     background-color: $color-background-1;
-    color: $color-text-white;
+    color: $color-text-c;
     border-radius: $radius-small;
   }
 
   .tab-headers > *.active {
     color: #1E1E2B;
-    background-color: $color-text-white;
+    background-color: $color-text-c;
 
     a, a:visited {
-      color: $color-blue;
+      color: $theme-color-main-c;
     }
   }
 
@@ -84,7 +92,7 @@ main {
   max-width: $width-sm;
   margin: auto;
 }
-
+blue-text
 .full-page-md {
   max-width: $width-md;
   margin: auto;
@@ -141,7 +149,7 @@ main {
   }
 
   .empty-text {
-    color: $color-text-grey;
+    color: $color-text-c1;
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -149,7 +157,7 @@ main {
   }
 
   a.add-text {
-    color: $color-text-grey-2;
+    color: $color-text-c2;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -189,7 +197,7 @@ main {
   .body {
     font-size: $fontsize-md;
     margin-bottom: $fontsize-big*2;
-    color: $color-text-grey;
+    color: $color-text-c1;
 
     .message {
       margin-bottom: $padding-unit-big;
@@ -199,7 +207,7 @@ main {
       span.user-score, span.user-reward {
         padding: $padding-unit/2;
         background-color: $color-background;
-        color: $color-blue;
+        color: $theme-color-main-c;
         border-radius: $radius-small;
       }
     }
