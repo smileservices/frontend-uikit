@@ -1,0 +1,42 @@
+.tree {
+  li {
+    display: flex;
+    align-items: center;
+    padding: $padding-unit-sm/2 0px;
+
+    span.expander {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    div.parent {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 8px;
+    }
+
+    div.parent.expanded {
+      font-weight: bold;
+    }
+
+    div.parent.expanded.open-details {
+      background-color: #576EFF;
+      border-radius: 1px;
+    }
+
+    div.parent.open-details {
+      background-color: #576EFF;
+      border-radius: 1px;
+    }
+
+    div.parent:hover {
+      cursor: pointer;
+    }
+  }
+
+  li.children {
+    display: list-item;
+    margin-left: $padding-unit-sm;
+  }
+}

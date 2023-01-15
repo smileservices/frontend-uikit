@@ -64,11 +64,11 @@ small, .small {
 
 .breadcrumbs {
   font-size: $fontsize-md;
-  color: $color-text-c1;
+  color: $color-text;
   margin-bottom: $padding-unit*4;
 
   a, a:visited {
-      color: $color-text-c2;
+      color: $color-text-c;
   }
 }
 
