@@ -83,7 +83,8 @@ function ExampleForm(state, dispatch, extraData = {}) {
                 error={state.errors.select}
                 options={selectOptions}
                 onChange={handleChangeSelect("select")}
-                smallTextUnder="Select validation error"
+                smallTextUnder="Using react-select: https://react-select.com/"
+                smallText="Select validation error"
                 isDisabled={Boolean(waiting)}
             />
             <Textarea
