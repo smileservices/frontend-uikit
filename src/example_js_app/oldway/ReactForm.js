@@ -4,9 +4,9 @@ import {
     Input,
     Textarea,
     SelectReact, Checkbox,
-} from "../components/form";
-import {FormElement} from "../components/form";
-import Alert from "../components/Alert";
+} from "../../components/form";
+import {FormElement} from "../../components/form";
+import Alert from "../../components/Alert";
 
 // The ReactForm is used for both update and create operations. That's why it has validation function as a param
 
@@ -63,7 +63,9 @@ function ReactForm({
 
     function validate(normalizedData, callback) {
         let vErr = {};
-        if (normalizedData.description.length < 30) vErr.description = 'Description is too short. It has to be at least 30 characters';
+        if (normalizedData.description.length < 5) vErr.description = 'Description is too short. It has to be at least 5 characters';
+
+        // can handle extra data coming from the app (create or edit)
         if (extraData.formElements) {
             extraData.formElements.validate(normalizedData, vErr);
         }
@@ -96,7 +98,8 @@ function ReactForm({
             <Input name="name" label="Input" inputProps={{
                         ...makeStateProps('name'),
                         type: 'text',
-                        disabled: Boolean(waiting)
+                        disabled: Boolean(waiting),
+                        required: true
                     }}
                    smallText="The name of the concept"
                    error={errors.name}

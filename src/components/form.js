@@ -46,22 +46,18 @@ function handleSelectClass(error) {
     }
 }
 
-export function FormElement({data, children, callback, alert, waiting, buttonText, cancel = false}) {
+export function FormElement({callback, alert, waiting, buttonText}) {
     if (waiting) return (<Waiting text={waiting}/>);
     return (
         <form onSubmit={e => {
             e.preventDefault();
             e.stopPropagation();
-            callback(data);
+            callback();
             // window.scrollTo({ top: 0, behavior: 'smooth' });
         }}>
             {children}
             {alert}
             <div className="buttons-container">
-                {cancel
-                    ? <button className="btn light" onClick={cancel}>{buttonText ? buttonText : 'Cancel'}</button>
-                    : ''
-                }
                 <button type="submit" className="btn light submit">{buttonText ? buttonText : 'Submit'}</button>
             </div>
         </form>

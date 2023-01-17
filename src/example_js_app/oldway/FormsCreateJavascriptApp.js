@@ -1,7 +1,7 @@
 import React, {useEffect, useState, Fragment} from "react";
 import ReactDOM from "react-dom";
-import confettiFactory from "../vanilla/confetti";
-import CreateableFormComponent from "../components/CreateableFormComponent";
+import confettiFactory from "../../vanilla/confetti";
+import CreateableFormComponent from "../../components/CreateableFormComponent";
 
 const startConfetti = confettiFactory(100, 1);
 

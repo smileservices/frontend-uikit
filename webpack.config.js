@@ -12,7 +12,7 @@ module.exports = (env, argv) => ({
             : ['./static/react_files/react.development.js', './static/react_files/react-dom.development.js'],
 
         //mapping of <js file destination>: <react source>
-        'forms_create_javascript_app': './src/example_js_app/FormsCreateJavascriptApp.js',
+        'forms_create_javascript_app': './src/example_js_app/forms/CreateApp.js',
     },
     output: {
         filename: '[name].js',
