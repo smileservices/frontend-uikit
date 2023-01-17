@@ -4,6 +4,41 @@ import React from "react";
 import {makeId} from "../../components/utils";
 import {bool} from "prop-types";
 
+export const SUBMIT_FORM_STATE = {
+    response: {},
+    waiting: false,
+    error: false,
+    success: false,
+}
+
+export const formSubmitReducer = (state, action) => {
+    switch (action.type) {
+        case "START":
+            return {
+                waiting: true,
+                error: false,
+                success: false,
+                data: {}
+            }
+        case "SUCCESS":
+            return {
+                waiting: false,
+                error: false,
+                success: action.payload.message,
+                data: action.payload.data,
+            }
+        case "ERROR":
+            return {
+                waiting: false,
+                success: false,
+                error: action.payload,
+                data: {}
+            }
+        default:
+            return state;
+    }
+}
+
 export function FormElement({callback, formState, buttonText = false, children}) {
 
     function buildAlert(error) {

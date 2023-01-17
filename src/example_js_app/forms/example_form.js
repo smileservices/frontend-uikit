@@ -6,6 +6,16 @@ import {
     SelectReact, Checkbox,
 } from "../../components/form";
 
+export const FORM_INITIAL_STATE = {
+    data: {
+        name: "",
+        description: "",
+        select: [],
+        submit_error: false
+    },
+    errors: {}
+}
+
 export function normalizeExampleForm(data) {
     const normalized = {...data};
     normalized.select = normalized.select.value;

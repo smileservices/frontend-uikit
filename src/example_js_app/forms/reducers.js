@@ -1,20 +1,3 @@
-export const FORM_INITIAL_STATE = {
-    data: {
-        name: "",
-        description: "",
-        select: [],
-        submit_error: false
-    },
-    errors: {}
-}
-
-export const SUBMIT_FORM_STATE = {
-    response: {},
-    waiting: false,
-    error: false,
-    success: false,
-}
-
 export const formReducer = (state, action) => {
 
     switch (action.type) {
@@ -31,33 +14,10 @@ export const formReducer = (state, action) => {
                 ...state,
                 errors: action.payload
             }
-        default:
-            return state;
-    }
-}
-
-export const formSubmitReducer = (state, action) => {
-    switch (action.type) {
-        case "START":
+        case "CLEAR_ERRORS":
             return {
-                waiting: true,
-                error: false,
-                success: false,
-                data: {}
-            }
-        case "SUCCESS":
-            return {
-                waiting: false,
-                error: false,
-                success: action.payload.message,
-                data: action.payload.data,
-            }
-        case "ERROR":
-            return {
-                waiting: false,
-                success: false,
-                error: action.payload,
-                data: {}
+                ...state,
+                errors: {}
             }
         default:
             return state;
