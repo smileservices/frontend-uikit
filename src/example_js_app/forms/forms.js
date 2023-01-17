@@ -5,17 +5,27 @@ import {makeId} from "../../components/utils";
 import {bool} from "prop-types";
 
 export function FormElement({callback, formState, buttonText = false, children}) {
-    if (formState.waiting) return (<Waiting text="Posting..."/>);
 
     function buildAlert(error) {
-        if (!Boolean(error)) {
+        if (!error) {
             return "";
         }
         const alertText = error;
         return (<Alert
             key={makeId()}
             text={alertText} type="danger"
-            stick={true}
+            hideable={false}
+        />)
+    }
+
+    function buildSuccess(success) {
+        if (!success) {
+            return "";
+        }
+        const alertText = success;
+        return (<Alert
+            key={makeId()}
+            text={alertText} type="success"
             hideable={false}
         />)
     }
@@ -27,8 +37,10 @@ export function FormElement({callback, formState, buttonText = false, children})
             callback();
             // window.scrollTo({ top: 0, behavior: 'smooth' });
         }}>
+            {formState.waiting ? <div className="overlay-waiting"><Waiting text="Posting..."/></div> : ""}
             {children}
             {buildAlert(formState.error)}
+            {buildSuccess(formState.success)}
             <div className="buttons-container">
                 <button type="submit" className="btn light submit">{buttonText ? buttonText : 'Submit'}</button>
             </div>

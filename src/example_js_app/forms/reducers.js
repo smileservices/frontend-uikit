@@ -12,6 +12,7 @@ export const SUBMIT_FORM_STATE = {
     response: {},
     waiting: false,
     error: false,
+    success: false,
 }
 
 export const formReducer = (state, action) => {
@@ -41,17 +42,20 @@ export const formSubmitReducer = (state, action) => {
             return {
                 waiting: true,
                 error: false,
+                success: false,
                 data: {}
             }
         case "SUCCESS":
             return {
                 waiting: false,
                 error: false,
-                data: action.payload
+                success: action.payload.message,
+                data: action.payload.data,
             }
         case "ERROR":
             return {
                 waiting: false,
+                success: false,
                 error: action.payload,
                 data: {}
             }

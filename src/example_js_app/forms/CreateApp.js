@@ -18,7 +18,7 @@ function dummyPost(URL, data, dispatchForm, dispatchData) {
             dispatchData({type: "FORM_ERROR", payload: {submit_error: "Just uncheck this"}});
         } else {
             console.info("submit success!")
-            dispatchForm({type: "SUCCESS", payload: {message: "The form was posted successfully."}});
+            dispatchForm({type: "SUCCESS", payload: {message: "The form was posted successfully.", data: {}}});
         }
     }, 5000);
 }
