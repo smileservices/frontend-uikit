@@ -2,6 +2,8 @@ import React, {useState, useEffect, Fragment} from 'react';
 import Select from 'react-select';
 import Creatable, {makeCreatableSelect} from 'react-select/creatable';
 import Waiting from "./Waiting";
+import {useDropzone} from "react-dropzone";
+import {makeId} from "../example_js_app/reusables/utils";
 
 export const ConfirmComponent = ({buttonText, questionText, handleConfirm}) => {
     const [ask, setAsk] = useState(false);
@@ -141,7 +143,19 @@ export const SelectVanilla = ({name, label, inputProps, smallText, error, Option
     )
 }
 
-export const SelectReact = ({name, label, smallText, smallTextUnder, error, options, value, onChange, props, isLoading, isDisabled}) => {
+export const SelectReact = ({
+                                name,
+                                label,
+                                smallText,
+                                smallTextUnder,
+                                error,
+                                options,
+                                value,
+                                onChange,
+                                props,
+                                isLoading,
+                                isDisabled
+                            }) => {
     const infoIcon = smallText ? <span className="icon-info" data-tooltip={smallText}>&#xe90c;</span> : '';
     const labelOutput = label ? <label htmlFor={name}>{label}{infoIcon}</label> : '';
     return (
@@ -160,7 +174,18 @@ export const SelectReact = ({name, label, smallText, smallTextUnder, error, opti
     )
 }
 
-export const SelectReactCreatable = ({name, label, smallText, error, options, value, onChange, props, isLoading, isDisabled}) => {
+export const SelectReactCreatable = ({
+                                         name,
+                                         label,
+                                         smallText,
+                                         error,
+                                         options,
+                                         value,
+                                         onChange,
+                                         props,
+                                         isLoading,
+                                         isDisabled
+                                     }) => {
     const infoIcon = smallText ? <span className="icon-info" data-tooltip={smallText}>&#xe90c;</span> : '';
     const labelOutput = label ? <label htmlFor={name}>{label}{infoIcon}</label> : '';
     return (<div className="form-group">
@@ -231,4 +256,79 @@ export function ImageInputComponent({inputProps, data, setValue, disabled, small
             </div>
         </div>
     )
+}
+
+export function ImageUploadField(
+    {
+        images, //[] list of exisitng images
+        deleteHandler, //func to trigger the deletion of existing images
+        name, //str name of the formfield (must match the form state field)
+        labelText, //str label of the formfield
+        uploadHandler, //func to trigger upload of the selected images
+        error //str error text
+    }
+) {
+    const [files, setFiles] = useState([]);
+    const {acceptedFiles, getRootProps, getInputProps} = useDropzone({
+        accept: {
+            'image/*': []
+        },
+        onDropAccepted: (acceptedFiles, e) => {
+            setFiles(acceptedFiles.map(file => Object.assign(file, {
+                preview: URL.createObjectURL(file)
+            })));
+        }
+    });
+
+    const thumb = file => (
+        <img src={file} key={makeId(3)}
+            // Revoke data uri after image is loaded
+            //  onLoad={() => {
+            //      URL.revokeObjectURL(file)
+            //  }}
+        />
+    );
+
+    function existingImage(image) {
+        return (
+            <div key={makeId(3)} className="image-container">
+                <div className="toolbar">
+                    <a className="delete" onClick={() => deleteHandler(name, image)}><span className="icon-cancel"></span></a>
+                </div>
+                {thumb(image)}
+            </div>
+        )
+    }
+
+    function uploadAction(e) {
+        e.preventDefault();
+        uploadHandler(name, files, ()=>setFiles([]));
+    }
+
+    return (
+        <div className="form-group image-upload">
+            <label htmlFor={name}>{labelText}</label>
+
+            <div className="thumbs-container tile-container">
+                {images ? images.map(i => existingImage(i)) : ""}
+            </div>
+
+            <div {...getRootProps({className: 'dropzone'})} id={name}>
+                <input {...getInputProps()} />
+                <p>Drag 'n' drop some files here, or click to select files</p>
+            </div>
+
+            <div className="thumbs-container tile-container">
+                {files.map(f => thumb(f.preview))}
+            </div>
+
+            {files.length > 0 ?
+                <div className="buttons-container">
+                    <button className="btn secondary" onClick={() => setFiles([])}>Reset</button>
+                    <button className="btn secondary" onClick={uploadAction}>Upload</button>
+                </div>
+                : ""}
+            {error ? (<div className="invalid-feedback">{error}</div>) : ''}
+        </div>
+    );
 }

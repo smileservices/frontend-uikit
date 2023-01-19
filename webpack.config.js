@@ -7,12 +7,14 @@ module.exports = (env, argv) => ({
         // just create the react-bundle once
 
         //for dev
-        'react-bundle': argv.mode === 'production'
-            ? ['./static/react_files/react.min.js', './static/react_files/react-dom.min.js']
-            : ['./static/react_files/react.development.js', './static/react_files/react-dom.development.js'],
+        // 'react-bundle': argv.mode === 'production'
+        //     ? ['./static/react_files/react.min.js', './static/react_files/react-dom.min.js']
+        //     : ['./static/react_files/react.development.js', './static/react_files/react-dom.development.js'],
 
         //mapping of <js file destination>: <react source>
         'forms_create_javascript_app': './src/example_js_app/forms/CreateApp.js',
+        'forms_image_app': './src/example_js_app/forms/ImageFormApp.js',
+        'modal_simple_app': './src/example_js_app/modal/ModalApp.js',
     },
     output: {
         filename: '[name].js',

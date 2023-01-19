@@ -41,3 +41,29 @@
     }
   }
 }
+
+.image-upload {
+  .dropzone {
+    background-color: $color-background-2;
+    margin-bottom: $padding-unit-md;
+    padding: 1.5*$padding-unit $padding-unit;
+    border: dotted 2px $color-background-3;
+    border-radius: $radius-medium;
+    text-align: center;
+  }
+
+  .thumbs-container {
+    //min-height: 3*$fontsize-big;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    .image-container {
+      position: relative;
+      width: 150px;
+      min-height: 100px;
+    }
+
+    img {
+      border-radius: $radius-medium;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 $button-bg: $theme-color-main-c;
 $button-text: $color-text-c;
 $button-hover-bg: darken($button-bg, 20);
-$button-radius: 40px;
+$button-radius: $radius-medium;
 
 $button-secondary-bg: $color-background-1;
 $button-secondary-text: $color-text-c;
@@ -22,7 +22,7 @@ $button-dark-hover-bg: $color-background;
   align-items: center;
   gap: $padding-unit-md;
   margin: 0;
-  padding: 9px 28px;
+  padding: $padding-unit-md/2 $padding-unit-big;
   max-width: 150px;
   border-radius: $button-radius;
   background-color: $button-bg;
@@ -93,6 +93,7 @@ a.btn:visited {
 }
 
 .btn.block {
+  max-width: 100%;
   width: 100%;
 }
 

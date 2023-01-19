@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/icomoon_fonts/style.css">
+
+</head>
+<body>
+
+<nav>
+    <div class="left-side" id="nav-logo">
+        <a rel="nofollow noopener" href="#" class="collapse-button">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </a>
+        <a class="navbar-logo" href="/">UI.kit</a>
+    </div>
+    <div id="profile-app">
+        <div class="dropdown">
+            <span class="btn secondary dropdown-button">Dropdown</span>
+        </div>
+        <div class="dropdown">
+            <span class="dropdown-button">
+                <span class="dropdown-button-icon icon-person-circle"></span>
+            </span>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+    <section class="header">
+        <h1>React Forms</h1>
+    </section>
+
+    <div class="breadcrumbs">
+        <a href="/">Homepage</a> &gt; Form > Image Upload Form
+    </div>
+
+    <section class="full-page-md">
+        <h2 class="header">How to upload images</h2>
+        <p>This handles submitting a form that contains one or more images. The images are uploaded before the form is
+            submitted, thus the final form data carries on the uploaded paths.</p>
+        <div class="form-container full-page-md" id="image-forms"></div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <section class="about column-container">
+        <header>UI kit Footer</header>
+        <p>
+            Enjoy having all the elements into one place.
+        </p>
+        <div class="button-links-container">
+            <a href="https://www.facebook.com/groups/noodles.dev" rel="nofollow noopener"
+               class="uikit-button filled default">
+                Join our Facebook Group!
+            </a>
+            <a href="/backstage" rel="nofollow noopener" class="uikit-button outlined white">
+                Some CTA
+            </a>
+        </div>
+    </section>
+
+    <section class="links column-container">
+        <h4 class="header">UI Kit</h4>
+        <a href=#>About</a>
+        <a href=#>Technologies</a>
+        <a href=#>General Concepts</a>
+        <a href=#>Implementation Concepts</a> <a href=#>Resources</a>
+        <a href=#>Collections</a>
+    </section>
+
+    <section class="social column-container">
+        <div class="links">
+            <h4 class="header">Links</h4>
+            <a href=# rel="nofollow noopener">Privacy Policy</a>
+            <a href=# rel="nofollow noopener">Terms and Conditions</a>
+            <a href=# rel="nofollow noopener">Cookies Policy</a>
+        </div>
+        <div class="socials">
+            <a href="#"><span class="icon icon-facebook"></span></a>
+            <span class="icon icon-twitter"></span>
+            <a href="#"><span class="icon icon-linkedin"></span></a>
+            <span class="icon icon-telegram1"></span>
+            <span class="icon icon-reddit-alien"></span>
+        </div>
+    </section>
+</footer>
+<script src="/js/react-bundle.js"></script>
+<script src="/js/forms_image_app.js"></script>
+<script>
+
+    window.addEventListener('load', e => {
+        document.querySelectorAll('.collapsible .collapse-toggle').forEach(el => el.onclick = evt => {
+            evt.preventDefault();
+            evt.target.closest('.collapsible').classList.toggle('show');
+        });
+    });
+
+    function toggle_sidebar() {
+        if (innerWidth > 600) {
+            document.querySelector('body').classList.toggle('sidebar-visible');
+        } else {
+            document.querySelector('body').classList.toggle('sidebar-visible-mobile');
+        }
+    }
+
+</script>
+</body>
+</html>
