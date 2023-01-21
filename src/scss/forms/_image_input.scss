@@ -71,15 +71,23 @@
 
       .file-container {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         min-height: 100px;
         padding: $padding-unit-sm/2;
         border-radius: $radius-medium;
         background-color: $color-background-3;
+        color: $theme-color-text-c;
       }
 
       img {
         border-radius: $radius-medium;
+      }
+
+      .file-thumb {
+
       }
     }
   }

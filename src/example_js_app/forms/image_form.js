@@ -9,9 +9,9 @@ export const FORM_INITIAL_STATE = {
     data: {
         name: "",
         images: [
-            "https://thumbs.dreamstime.com/t/two-yellow-ducklings-white-background-137011182.jpg",
-            "https://topicimages.mrowl.com/small/priyalove/sonam_kapoor_0.jpg",
-            "https://cdn.cnn.com/cnnnext/dam/assets/171115083138-cali-shooting-small-11.jpg"
+            // "https://thumbs.dreamstime.com/t/two-yellow-ducklings-white-background-137011182.jpg",
+            // "https://topicimages.mrowl.com/small/priyalove/sonam_kapoor_0.jpg",
+            // "https://cdn.cnn.com/cnnnext/dam/assets/171115083138-cali-shooting-small-11.jpg"
         ],
         submit_error: false,
         image_error: false,

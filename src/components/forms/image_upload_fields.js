@@ -22,20 +22,29 @@ export function FileUploadField(
             // 'image/*': []
         },
         onDropAccepted: (acceptedFiles, e) => {
+            console.log("accepted file", acceptedFiles);
             setFiles(acceptedFiles.map(file => Object.assign(file, {
                 preview: URL.createObjectURL(file)
             })));
         }
     });
 
-    const thumb = image => (
-        <img src={image} key={makeId(3)}
-            // Revoke data uri after image is loaded
-            //  onLoad={() => {
-            //      URL.revokeObjectURL(file)
-            //  }}
-        />
-    );
+    const displayFileThumb = file => {
+        let fileUrl = "";
+        let fileName = "";
+        if (String(file) === file) {
+            fileName = file.split("/").pop();
+            fileUrl = file;
+        } else {
+            fileName = file.name;
+            fileUrl = file.preview;
+        }
+        const fileType = fileName.split(".").pop();
+        if (["jpg", "jpeg", "png", "svg", "bmp"].includes(fileType)) {
+            return (<img src={fileUrl} key={makeId(3)}/>);
+        }
+        return fileName;
+    }
 
 
     function uploadAction(e) {
@@ -64,7 +73,7 @@ export function FileUploadField(
                             className="icon-cancel"></span></a>
                     </div>
                     : ""}
-                {thumb(file)}
+                {displayFileThumb(file)}
                 {deleteWait === file ? <div className="overlay-waiting"><Waiting text="Deleting"/></div> : ""}
             </div>
         )
@@ -73,7 +82,7 @@ export function FileUploadField(
     function loadedFile(file) {
         return (
             <div key={makeId(3)} className="file-container">
-                {thumb(file.preview)}
+                {displayFileThumb(file)}
             </div>
         )
     }
