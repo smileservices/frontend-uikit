@@ -49,21 +49,23 @@ section.header {
   gap: 0.35rem;
 
   > a {
+    display: flex;
     font-size: 0.9rem;
-    padding: 0.5rem;
-    border-radius: $radius-small;
-    color: $theme-color-main-c;
-  }
-
-  > a.delete {
-    color: $color-red;
+    padding: 0.25rem;
+    //border-radius: $radius-small;
+    color: $color-text;
   }
 
   > a:hover {
-    background-color: $color-background;
-    transition: background-color 0.5s ease-in-out;
-    border-radius: $radius-small;
+    //background-color: $color-background;
+    //transition: background-color 0.5s ease-in-out;
+    //border-radius: $radius-small;
     cursor: pointer;
+  }
+
+  > a.delete:hover {
+    transition: color 0.5s ease-in-out;
+    color: $color-red;
   }
 }
 
