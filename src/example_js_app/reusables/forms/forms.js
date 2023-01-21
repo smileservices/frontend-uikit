@@ -1,7 +1,7 @@
-import Waiting from "../../components/Waiting";
-import Alert from "../../components/Alert";
+import Waiting from "../../../components/Waiting";
+import Alert from "../../../components/Alert";
 import React from "react";
-import {makeId} from "../../components/utils";
+import {makeId} from "../../../components/utils";
 import {bool} from "prop-types";
 
 export const SUBMIT_FORM_STATE = {

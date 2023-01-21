@@ -2,7 +2,7 @@ import React, {useReducer} from "react"
 
 import ExampleForm, {normalizeExampleForm, validateExampleForm, FORM_INITIAL_STATE} from "./example_form";
 import {formReducer} from "../reusables/reducers"
-import {FormElement, formSubmitReducer, SUBMIT_FORM_STATE} from "../reusables/forms";
+import {FormElement, formSubmitReducer, SUBMIT_FORM_STATE} from "../reusables/forms/forms";
 
 function dummyPost(URL, data, dispatchForm, dispatchData) {
     // this is a function to be implemented and that would handle all parts of the post request

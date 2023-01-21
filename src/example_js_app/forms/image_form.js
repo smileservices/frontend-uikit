@@ -1,6 +1,6 @@
 import React, {Fragment} from "react"
-import {FileUploadField} from "../../components/forms/image_upload_fields";
-
+import {filesUploadHandler, filesDeleteHandler} from "../apiInterface";
+import {FileUploadField} from "../reusables/forms/image_upload_fields";
 import {
     Input, Checkbox,
 } from "../../components/form";
@@ -21,38 +21,6 @@ export const FORM_INITIAL_STATE = {
 
 export function normalizeImageForm(data) {
     return {...data};
-}
-
-export function filesUploadHandler(url, files, callback) {
-    // upload the files to the URL and return their names
-    console.log("uploading files", url)
-    const file = new FileReader(files[0].preview);
-    const form = new FormData();
-    form.append("image", file);
-    console.log(form);
-    // fetch(url, {
-    //     method: "POST",
-    //     body: form
-    // });
-    const uploadedFileNames = files.map(f => f.preview);
-    setTimeout(
-        ()=> callback(uploadedFileNames),
-        4000
-    );
-
-}
-
-export function filesDeleteHandler(url, resourceUrl, callback) {
-    //deletes the file from the URL
-    console.log("making DELETE post", resourceUrl);
-    // fetch(url, {
-    //     method: "DELETE",
-    //     body: resourceUrl
-    // });
-    setTimeout(
-        ()=> callback(),
-        4000
-    );
 }
 
 export function validateImageForm(data) {
@@ -135,7 +103,6 @@ function ImageForm(state, dispatch) {
                 uploadTrigger={filesUploadTrigger}
                 error={state.errors.images}
             />
-            {/*<UppyImageForm />*/}
             <Checkbox
                 inputProps={{checked: state.data.submit_error, onChange: handleChangeCheckbox}}
                 name="submit_error"
