@@ -1,10 +1,9 @@
 import React, {useReducer} from "react"
 
-import ExampleForm, {normalizeImageForm, validateImageForm, FORM_INITIAL_STATE} from "./image_form";
 import {formReducer} from "../reusables/reducers"
 import {FormElement, formSubmitReducer, SUBMIT_FORM_STATE} from "../reusables/forms";
 import ReactDOM from "react-dom";
-import ImageForm from "./image_form";
+import ImageForm, {FORM_INITIAL_STATE, normalizeImageForm} from "./image_form";
 
 function dummyPost(URL, data, dispatchForm, dispatchData) {
     // this is a function to be implemented and that would handle all parts of the post request
@@ -27,17 +26,9 @@ function dummyPost(URL, data, dispatchForm, dispatchData) {
 export default function ImageFormApp() {
     const [formState, dispatchForm] = useReducer(formSubmitReducer, SUBMIT_FORM_STATE);
     const [formData, dispatchData] = useReducer(formReducer, FORM_INITIAL_STATE);
-
+    const normalized = normalizeImageForm(formData.data);
     let submitCallback = () => {
-        const normalized = normalizeImageForm(formData.data);
-        const errors = validateImageForm(normalized);
-        if (errors) {
-            dispatchData({type: "FORM_ERROR", payload: errors});
-        } else {
-            dispatchData({type: "CLEAR_ERRORS"});
-            // we let the post function to trigger the dispatches
-            dummyPost("create.something.com", normalized, dispatchForm, dispatchData);
-        }
+        dummyPost("create.something.com", normalized, dispatchForm, dispatchData);
     }
 
     return (

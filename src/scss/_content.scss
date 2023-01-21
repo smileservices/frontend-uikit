@@ -1,25 +1,23 @@
-.waiting-container {
-  display: block;
-  margin: $padding-unit-big 0;
-  text-align: center;
-  padding: $padding-unit-big;
-  color: $theme-color-main-c;
-  border: 1px solid;
-  border-radius: $radius-medium;
+.overlay-waiting {
+  background-color: transparentize($color-background-4, 0.15);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: $form-overlay;
+  top: 0;
+  left: 0;
+  border-radius: $radius-big;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  span {
-    margin: 0 $padding-unit-big;
-  }
-}
-
-.waiting-inline-container {
-  display: block;
-  text-align: center;
-  padding: $padding-unit-sm;
-  color: $theme-color-main-c;
-
-  span {
-    margin: 0 $padding-unit-sm;
+  .waiting-container {
+    color: $theme-color-text-c;
+    border-radius: $radius-medium;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $padding-unit-big;
   }
 }
 

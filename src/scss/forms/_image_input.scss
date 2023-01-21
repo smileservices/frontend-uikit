@@ -52,18 +52,35 @@
     text-align: center;
   }
 
-  .thumbs-container {
-    //min-height: 3*$fontsize-big;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .upload-area {
+    position: relative;
+  }
 
-    .image-container {
-      position: relative;
-      width: 150px;
-      min-height: 100px;
-    }
+  .dropzone-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $padding-unit;
 
-    img {
-      border-radius: $radius-medium;
+    .thumbs-container {
+      //min-height: 3*$fontsize-big;
+      display: flex;
+      flex-direction: row;
+      gap: $padding-unit;
+      justify-content: center;
+
+      .file-container {
+        position: relative;
+        width: 150px;
+        min-height: 100px;
+        padding: $padding-unit-sm/2;
+        border-radius: $radius-medium;
+        background-color: $color-background-3;
+      }
+
+      img {
+        border-radius: $radius-medium;
+      }
     }
   }
 }

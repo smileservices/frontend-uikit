@@ -11,9 +11,9 @@ export default function Waiting({text}) {
 
 export function WaitingInline({text}) {
     return (
-        <div className="waiting-inline-container">
+        <div className="waiting-container inline">
             <span className="icon-hour-glass spin-stop"> </span>
-            <span className="text">{text}</span>
+            {text ? <span className="text">{text}</span> : "" }
         </div>
     )
 }

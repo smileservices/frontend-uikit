@@ -1,41 +1,62 @@
-import React, {useReducer, useEffect, Fragment, useState} from "react"
-import {ImageUploadField} from "../../components/form";
+import React, {Fragment} from "react"
+import {FileUploadField} from "../../components/forms/image_upload_fields";
 
 import {
-    Input,
-    Textarea,
-    SelectReact, Checkbox,
+    Input, Checkbox,
 } from "../../components/form";
 
 export const FORM_INITIAL_STATE = {
     data: {
         name: "",
-        images: ["https://thumbs.dreamstime.com/t/two-yellow-ducklings-white-background-137011182.jpg"],
-        submit_error: false
+        images: [
+            "https://thumbs.dreamstime.com/t/two-yellow-ducklings-white-background-137011182.jpg",
+            "https://topicimages.mrowl.com/small/priyalove/sonam_kapoor_0.jpg",
+            "https://cdn.cnn.com/cnnnext/dam/assets/171115083138-cali-shooting-small-11.jpg"
+        ],
+        submit_error: false,
+        image_error: false,
     },
     errors: {}
 }
 
 export function normalizeImageForm(data) {
-    const normalized = {...data};
-    return normalized;
+    return {...data};
+}
+
+export function filesUploadHandler(url, files, callback) {
+    // upload the files to the URL and return their names
+    console.log("uploading files", url)
+    const file = new FileReader(files[0].preview);
+    const form = new FormData();
+    form.append("image", file);
+    console.log(form);
+    // fetch(url, {
+    //     method: "POST",
+    //     body: form
+    // });
+    const uploadedFileNames = files.map(f => f.preview);
+    setTimeout(
+        ()=> callback(uploadedFileNames),
+        4000
+    );
+
+}
+
+export function filesDeleteHandler(url, resourceUrl, callback) {
+    //deletes the file from the URL
+    console.log("making DELETE post", resourceUrl);
+    // fetch(url, {
+    //     method: "DELETE",
+    //     body: resourceUrl
+    // });
+    setTimeout(
+        ()=> callback(),
+        4000
+    );
 }
 
 export function validateImageForm(data) {
     return false;
-}
-
-function filesUpload(url, files, callback) {
-    // upload the files to the URL and return their names
-    console.log("uploading files", url)
-    const uploadedFileNames = files.map(f => f.preview);
-    callback(uploadedFileNames)
-}
-
-function filesDelete(url, callback) {
-    //deletes the file from the URL
-    console.log("making DELETE post", url);
-    callback(url);
 }
 
 
@@ -63,14 +84,15 @@ function ImageForm(state, dispatch) {
         });
     };
 
-    function filesUploadHandler(name, filesArray, callback) {
-        filesUpload(
-            "file/upload.url",
+    function filesUploadTrigger(name, filesArray, callback) {
+        filesUploadHandler(
+            "http://localhost:1234",
             filesArray,
             uploadedFilesURLS => {
                 if (state.data.image_error) {
                     dispatch({type: "FORM_ERROR", payload: {images: "Error while trying to upload"}});
                 } else {
+                    dispatch({type: "FORM_ERROR", payload: {}});
                     handleChangeFiles(name, state.data.images.concat(uploadedFilesURLS));
                     callback();
                 }
@@ -78,10 +100,14 @@ function ImageForm(state, dispatch) {
         );
     }
 
-    function filesDeleteHandler(name, fileDeleteURL) {
-        filesDelete(
+    function filesDeleteTrigger(name, fileDeleteURL, fieldCallback) {
+        filesDeleteHandler(
+            "http://localhost:1234",
             fileDeleteURL,
-            uploadedFileURL => handleChangeFiles(name, state.data[name].filter(f => f !== uploadedFileURL))
+            () => {
+                handleChangeFiles(name, state.data[name].filter(f => f !== fileDeleteURL));
+                fieldCallback();
+            }
         );
     }
 
@@ -101,12 +127,12 @@ function ImageForm(state, dispatch) {
                 }}
                 error={state.errors.name}
             />
-            <ImageUploadField
-                images={state.data.images}
+            <FileUploadField
+                uploadedFiles={state.data.images}
                 name="images"
                 labelText="Image Upload"
-                deleteHandler={filesDeleteHandler}
-                uploadHandler={filesUploadHandler}
+                deleteTrigger={filesDeleteTrigger}
+                uploadTrigger={filesUploadTrigger}
                 error={state.errors.images}
             />
             {/*<UppyImageForm />*/}
