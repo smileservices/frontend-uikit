@@ -12,7 +12,7 @@ $sidebar-text-color: $color-text;
 $sidebar-width: $fontsize-big*14;
 
 //footer
-$footer-background: darken($color-background-3, 30);
+$footer-background: shade-color($theme-color-main, 70);
 $footer-text-color: $theme-color-text-c;
 
 //dropdowns
