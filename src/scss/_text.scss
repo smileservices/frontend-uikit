@@ -5,6 +5,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+  color: darken(desaturate($theme-color-main, 30), 20);
   margin-bottom: $padding-unit-big;
 }
 
@@ -64,7 +65,7 @@ small, .small {
 
 .breadcrumbs {
   font-size: $fontsize-md;
-  color: $color-text;
+  color: darken($theme-color-main, 10);
   margin-bottom: $padding-unit*4;
 
   a, a:visited {
@@ -81,4 +82,9 @@ small, .small {
   ins,del {
     color: #211f1f;
   }
+}
+
+strong {
+  color: $theme-color-main;
+  font-weight: bold;
 }

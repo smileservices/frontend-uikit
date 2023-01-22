@@ -9,6 +9,10 @@ header {
   margin-bottom: $padding-unit-big*2;
   color: $theme-color-text-c;
 
+  h1 {
+    color: $theme-color-text-c;
+  }
+
 
   ul > li {
     padding: $padding-unit-sm/2 $padding-unit-md;

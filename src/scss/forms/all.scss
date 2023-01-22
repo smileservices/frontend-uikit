@@ -81,6 +81,14 @@ form {
     gap: $padding-unit-big;
   }
 
+  .form-group-checkbox {
+    .checkbox-input {
+      display: flex;
+      align-items: center;
+      gap: $padding-unit-sm*0.5;
+    }
+  }
+
   .invalid-feedback {
     display: block;
   }

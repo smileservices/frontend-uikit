@@ -103,11 +103,15 @@ export const Textarea = ({name, label, inputProps, smallText, error}) => {
 
 export const Checkbox = ({name, label, inputProps, smallText, error}) => {
     const infoIcon = smallText ? <span className="icon-info" data-tooltip={smallText}>&#xe90c;</span> : '';
-    const labelOutput = label ? <label htmlFor={name}>{label}{infoIcon}</label> : '';
     return (
-        <div className="">
-            <input type="checkbox" id={name} name={name}
-                   className={error ? 'invalid' : ''} {...inputProps} /> {labelOutput}
+        <div className="form-group-checkbox">
+            <div className="checkbox-input">
+                <input type="checkbox" id={name} name={name}
+                       className={error ? 'invalid' : ''} {...inputProps}
+                />
+                <label htmlFor={name}>{label}</label>
+                {infoIcon}
+            </div>
             {error
                 ? (<div className="invalid-feedback">{error}</div>)
                 : ''
