@@ -15,6 +15,7 @@ module.exports = (env, argv) => ({
         'forms_create_javascript_app': './src/example_js_app/forms/CreateApp.js',
         'forms_image_app': './src/example_js_app/forms/ImageFormApp.js',
         'modal_simple_app': './src/example_js_app/modal/ModalApp.js',
+        'account_app': './src/example_js_app/AccountApp.js',
         'elements_login_app': './src/example_js_app/forms/login/LoginApp.js',
     },
     output: {

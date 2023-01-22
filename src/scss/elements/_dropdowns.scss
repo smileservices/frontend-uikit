@@ -1,8 +1,13 @@
-$color-dropdown-hover: #373E7A;
+$color-dropdown-bg: $color-background-1;
+$color-dropdown-bg2: $color-background-2;
+$color-dropdown-text: $theme-color-text;
+$color-dropdown-link: darken($theme-color-main, 20);
+$color-dropdown-hover-bg: desaturate(lighten($theme-color-accent, 50), 10);
 
 .dropdown .dropdown-button {
   position: relative;
 }
+
 .dropdown .dropdown-menu {
   z-index: $dropdown-zindex;
   position: absolute;
@@ -13,8 +18,8 @@ $color-dropdown-hover: #373E7A;
   transform-origin: top center;
   font-size: $fontsize-sm;
   font-weight: 400;
-  background-color: $color-background;
-  color: white;
+  background-color: $color-dropdown-bg;
+  color: $color-dropdown-text;
   border-radius: $radius-medium;
 
   .other-menu-items {
@@ -23,25 +28,24 @@ $color-dropdown-hover: #373E7A;
 
     a {
       font-weight: normal;
-      font-size: 1rem;
-      line-height: 1.375rem;
-      padding-right: 0.5rem;
+      font-size: $fontsize-big;
+      padding-right: $padding-unit-md;
     }
 
     a:hover {
-      background-color: $color-dropdown-hover;
+      background-color: $color-dropdown-hover-bg;
     }
   }
 
   .profile {
-    border-bottom: 2px solid #1E1E2B;
+    border-bottom: 2px solid $theme-color-text;
     display: flex;
     align-items: center;
     padding: 1.75rem 1.5rem;
     min-width: 15rem;
 
     a {
-      color: #B8C7FF !important;
+      color: $color-dropdown-link !important;
       font-weight: normal;
       font-size: 1rem;
       line-height: 1.375rem;
@@ -50,7 +54,7 @@ $color-dropdown-hover: #373E7A;
   }
 
   .profile:hover {
-    background-color: $color-dropdown-hover;
+    background-color: $color-dropdown-hover-bg;
     cursor: pointer;
   }
 
@@ -67,8 +71,7 @@ $color-dropdown-hover: #373E7A;
         white-space: normal;
         font-weight: 600;
         font-size: 1rem;
-        line-height: 1.375rem;
-        color: #B8C7FF;
+        color: $color-dropdown-text;
       }
 
       .anchor-description {
@@ -77,12 +80,12 @@ $color-dropdown-hover: #373E7A;
         font-weight: normal;
         font-size: 0.875rem;
         line-height: 1.188rem;
-        color: $color-text-c1;
+        color: $color-dropdown-text;
       }
     }
 
     a:hover {
-      background-color: $color-dropdown-hover;
+      background-color: $color-dropdown-hover-bg;
     }
   }
 }
@@ -96,22 +99,22 @@ $color-dropdown-hover: #373E7A;
 .dropdown.submenu .dropdown-menu-account {
   position: static;
   display: flex;
-  background-color: $color-background-3;
+  background-color: $color-dropdown-bg2;
 }
 
 .dropdown.submenu .dropdown-menu {
   position: static;
   display: flex;
-  background-color: $color-background-3;
+  background-color: $color-dropdown-bg2;
 }
 
-.dropdown .dropdown-menu-account a:hover {
-  color: $color-text-c1;
-}
-
-.dropdown .dropdown-menu a:hover {
-  color: $color-text-c1;
-}
+//.dropdown .dropdown-menu-account a:hover {
+//  color: $color-dropdown-text;
+//}
+//
+//.dropdown .dropdown-menu a:hover {
+//  color: $color-dropdown-text;
+//}
 
 .dropdown.hidden .dropdown-menu-account {
   display: none;
