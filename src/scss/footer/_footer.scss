@@ -10,18 +10,14 @@ footer {
   background-color: $footer-background;
   color: $footer-text-color;
 
-  section header {
+  .header {
     color: $theme-color-main;
-    font-weight: bold;
-    font-size: $fontsize-big*1.2;
-    line-height: $lineheight-base;
-  }
 
-  section p {
-    font-weight: normal;
-    font-size: $fontsize-md;
-    line-height: $lineheight-base;
-    color: $footer-text-color;
+    p {
+      font-size: $fontsize-md;
+      line-height: $lineheight-base;
+      color: $footer-text-color;
+    }
   }
 
   section {
@@ -31,6 +27,7 @@ footer {
       line-height: $lineheight-base;
       color: $theme-color-main;
       margin-bottom: $padding-unit-sm;
+
       span {
         color: $theme-color-main;
       }
@@ -68,6 +65,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: $padding-unit-md;
+
     h4 {
       transform: rotate(-90deg);
       height: 96px;
@@ -78,6 +76,7 @@ footer {
       line-height: $lineheight-base;
       color: $color-text;
     }
+
     img {
       height: $fontsize-big*4;
     }

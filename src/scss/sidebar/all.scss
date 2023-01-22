@@ -28,10 +28,9 @@ aside.sidebar {
     align-items: center;
     justify-content: space-between;
     line-height: $fontsize-big*2;
-    min-width: 14rem;
+    min-width: $sidebar-width;
     font-size: $fontsize-big;
     font-weight: 700;
-    background-color: $sidebar-background;
 
     a {
       //padding: $padding-unit*2;
@@ -39,12 +38,12 @@ aside.sidebar {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: bold;
-      font-size: 1.4rem;
-      line-height: 22px;
+      font-size: $fontsize-big*1.2;
+      line-height: $lineheight-base;
       color: $sidebar-text-color;
 
       .close-icon {
-        font-size: 20px;
+        font-size: $fontsize-big*1.2;
       }
     }
   }
@@ -54,8 +53,7 @@ aside.sidebar {
     background-color: $sidebar-background;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-size: 12px;
-    line-height: 22px;
+    font-size: $fontsize-md;
     color: $sidebar-text-color;
     top: 0;
     left: 0;

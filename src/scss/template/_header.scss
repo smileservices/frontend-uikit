@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: row;
+  gap: $padding-unit-big;
+  padding: $padding-unit-big;
+  background-image: linear-gradient(to right, $theme-color-main, $theme-color-accent);
+  justify-content: space-between;
+  border-radius: $fontsize-big;
+  margin-bottom: $padding-unit-big*2;
+  color: $theme-color-text-c;
+
+
+  ul > li {
+    padding: $padding-unit-sm/2 $padding-unit-md;
+    background-image: linear-gradient(to right, $theme-color-main, rgba($theme-color-accent, 100));
+    border-radius: $fontsize-big;
+    margin-bottom: $padding-unit-sm;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .right-side {
+
+  }
+}
