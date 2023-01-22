@@ -9,29 +9,28 @@ $form-input-radius: $radius-medium;
 .form-container {
   position: relative;
   background-color: $color-background-1;
-  padding: $padding-unit;
   border-radius: $radius-big;
 
   .header {
     margin-bottom: 2rem;
   }
-
-  .buttons-container {
-    display: flex;
-    gap: $padding-unit-big;
-    justify-content: end;
-  }
 }
 
 form {
   position: relative;
-  margin: $padding-unit-big;
+  padding: $padding-unit-big*2;
   display: flex;
   flex-direction: column;
   gap: $padding-unit-md*2;
 
   > * {
     margin: 0;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: $padding-unit-big;
+    justify-content: end;
   }
 
   .btn {
@@ -78,10 +77,6 @@ form {
     display: flex;
     flex-direction: row;
     gap: 0.3rem;
-  }
-
-  button.submit {
-    align-self: flex-end;
   }
 
   .invalid-feedback {

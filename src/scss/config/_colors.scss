@@ -3,7 +3,7 @@ $theme-color-main: #9730b6;
 $theme-color-accent: #1f4fa3;
 
 //colors text
-$theme-color-text: #404040;
+$theme-color-text: darken(desaturate($theme-color-main, 55), 10);
 $theme-color-text-c: #ffffe6;
 $theme-color-text-ac: #f7f9ff;
 
