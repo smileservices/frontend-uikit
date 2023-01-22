@@ -9,10 +9,6 @@ main {
 
 section {
   margin: $padding-unit-big 0 $padding-unit-big*2;
-
-  .header {
-    margin: $padding-unit-big 0;
-  }
 }
 
 .vmargin-big {
@@ -47,11 +43,11 @@ section {
     padding: 5px 16px;
     border-radius: 20px;
     cursor: pointer;
-    color: $color-background-4;
+    color: $color-background-3;
     white-space: nowrap;
 
     a, a:visited {
-      color: $color-background-4;
+      color: $color-background-3;
     }
   }
 
@@ -60,16 +56,16 @@ section {
     padding: $padding-unit-sm/2;
     font-size: $fontsize-tn;
     background-color: $color-background-1;
-    color: $color-text-c;
+    color: $color-text-c1;
     border-radius: $radius-small;
   }
 
   .tab-headers > *.active {
     color: #1E1E2B;
-    background-color: $color-text-c;
+    background-color: $color-text-c1;
 
     a, a:visited {
-      color: $theme-color-main-c;
+      color: $theme-color-accent;
     }
   }
 
@@ -206,7 +202,7 @@ section {
       span.user-score, span.user-reward {
         padding: $padding-unit/2;
         background-color: $color-background;
-        color: $theme-color-main-c;
+        color: $theme-color-accent;
         border-radius: $radius-small;
       }
     }

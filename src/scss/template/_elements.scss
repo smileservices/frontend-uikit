@@ -1,0 +1,65 @@
+.color-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $padding-unit-big;
+  margin-bottom: $padding-unit-md;
+
+  .color {
+    width: 150px;
+    height: 50px;
+    border-radius: $radius-big;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    &.primary {
+      background-color: $theme-color-main;
+      color: $theme-color-text-c;
+    }
+
+    &.accent {
+      background-color: $theme-color-accent;
+      color: $theme-color-text-ac;
+    }
+    &.card-bg {
+      background-color: $card-color-bg;
+      color: $card-text-color;
+    }
+    &.bg {
+      background-color: $color-background;
+      color: $color-text;
+    }
+    &.bg1 {
+      background-color: $color-background-1;
+      color: $color-text-c1;
+    }
+    &.bg2 {
+      background-color: $color-background-2;
+      color: $color-text-c2;
+    }
+    &.bg3 {
+      background-color: $color-background-3;
+      color: $color-text-c3;
+    }
+    &.bg4 {
+      background-color: $color-background-3;
+      color: $color-text-c3;
+    }
+    &.bg5 {
+      background-color: $color-background-3;
+      color: $color-text-c3;
+    }
+  }
+}
+
+.elements-buttons {
+  > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $padding-unit-md;
+  }
+}

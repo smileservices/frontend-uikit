@@ -1,15 +1,15 @@
 // overriding Bootstrap forms
 .form-control {
-  background-color: $color-background-2;
-  color: $color-text-c;
-  border: 1px solid $color-background-1;
-  border-radius: $radius-medium;
+  background-color: $form-input-bg;
+  color: $form-input-text;
+  border: 1px solid $form-input-border;
+  border-radius: $form-input-radius;
   width: auto;
 }
 
 .form-control:focus {
-  color: $color-text;
-  background-color: $color-background-1;
-  border-color: $theme-color-accent;
-  box-shadow: 0 0 0 0.10rem transparentize($theme-color-accent, 0.3);
+  color: $form-input-text-focus;
+  background-color: $form-input-bg-focus;
+  border-color: $form-input-border-focus;
+  box-shadow: 0 0 0 0.10rem transparentize($form-input-border-focus, 0.3);
 }

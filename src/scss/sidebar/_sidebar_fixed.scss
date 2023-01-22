@@ -69,12 +69,15 @@ aside.sidebar {
       max-width: $sidebar-width;
       // max-width: 21rem;
 
+      a:hover {
+        color: $theme-color-main;
+      }
+
       .sidebar-title {
         font-weight: 600;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        margin-top: 1.5rem;
-        color: #FFFFFF;
+        font-size: $fontsize-big*1.2;
+        margin-bottom: $padding-unit-big;
+        margin-top: $padding-unit-big*1.5;
       }
 
       .has-parent-margin {
@@ -89,7 +92,7 @@ body.sidebar-visible {
 
   aside#sidebar {
     width: 100vw;
-    background-color: transparentize(darken($theme-color-main, 50), 0.5);
+    background-color: transparentize(darken($color-background-3, 50), 0.5);
   }
 }
 
@@ -109,164 +112,20 @@ aside.sidebar.expanded {
   #sidebar-app {
     display: flex;
 
-    .category-detail {
-      padding: 7rem 2rem 2rem 2rem;
-      overflow: auto;
-      height: 86vh;
-      width: 40vw;
-      max-width: 502px;
-      font-size: $fontsize-md;
-      border-left: 1px solid $color-background;
-      display: flex;
-      flex-direction: column;
-      background-color: $color-background-2;
-
-      h4 {
-        font-family: 'Montserrat', sans-serif !important;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        color: $sidebar-text-color;
-        text-align: left;
-      }
-
-      .name-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1.2rem;
-
-        .name {
-          font-weight: bold;
-        }
-
-        .close-btn {
-          font-size: 1rem;
-          cursor: pointer;
-        }
-      }
-
-      .description-container {
-        font-family: 'Noto Sans', sans-serif !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        font-size: 14px !important;
-        line-height: 21px !important;
-        margin-bottom: 2rem;
-
-        .description {
-          margin-bottom: 12px;
-        }
-
-        .view-more {
-          color: $color-text-c2;
-          font-weight: 600;
-        }
-      }
-
-      .section {
-        font-family: 'Noto Sans', sans-serif !important;
-        font-style: normal !important;
-        font-weight: normal;
-        font-size: 14px !important;
-        line-height: 21px !important;
-        margin-bottom: 3rem; // remove this later
-        .section-title {
-          margin-bottom: 8px;
-          font-weight: bold;
-        }
-
-        p.section-description {
-          margin-bottom: 1.4rem;
-        }
-
-        .concepts-container {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
-
-        .technologies-container {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: $padding-unit-big;
-
-          .technology {
-            .text {
-              .name {
-                color: $color-text-c;
-              }
-
-              .category {
-                color: $color-text-c2;
-                font-size: $fontsize-sm;
-              }
-            }
-          }
-
-          .technology:hover {
-            background-color: $color-background;
-          }
-        }
-      }
-
-      .concept-link {
-        background: #5C6FF6;
-        border-radius: 64px;
-        color: white;
-        padding: 4px 1rem;
-        font-family: Noto Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      .add-concept-btn {
-        background: #363845;
-        border-radius: 64px;
-        color: $color-text-c2;
-        padding: 4px 1rem;
-        font-family: Noto Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
-      }
-
-      .contribute-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 212px;
-        min-height: 72px;
-        background: #363845;
-        border-radius: $radius-big;
-        cursor: pointer;
-
-        .contribute {
-          color: $color-text-c2;
-        }
-      }
-    }
-
-
     .minimize {
       font-size: $fontsize-big;
       padding: $padding-unit-md;
-      background-color: $theme-color-main-c;
+      background-color: $theme-color-accent;
       position: absolute;
       right: 0;
       cursor: pointer;
     }
 
     .minimize:hover {
-      background-color: $theme-color-main-c;
+      background-color: $theme-color-accent;
     }
   }
+
 }
 
 @import "tree";

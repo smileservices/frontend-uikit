@@ -3,48 +3,48 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 12px;
-  margin-top: 3rem;
-  min-height: 15rem;
+  gap: $padding-unit-md;
+  margin-top: $padding-unit-big*3;
+  min-height: $padding-unit-big*15;
   padding: $padding-unit*6;
   background-color: $footer-background;
   color: $footer-text-color;
 
   section header {
-    color: $color-text-c;
+    color: $theme-color-main;
     font-weight: bold;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: $fontsize-big*1.2;
+    line-height: $lineheight-base;
   }
 
   section p {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #C5C9E1;
+    font-size: $fontsize-md;
+    line-height: $lineheight-base;
+    color: $footer-text-color;
   }
 
   section {
     h4.header {
       font-weight: bold;
-      font-size: 16px;
-      line-height: 22px;
-      color: #FFFFFF;
-      margin-bottom: 3px;
+      font-size: $fontsize-big;
+      line-height: $lineheight-base;
+      color: $theme-color-main;
+      margin-bottom: $padding-unit-sm;
       span {
-        color: #576EFF;
+        color: $theme-color-main;
       }
     }
   }
 
   a {
-    color: #FFFFFF !important;
+    color: $footer-text-color !important;
     white-space: nowrap;
-    margin-bottom: 4px;
+    margin-bottom: $padding-unit-sm;
   }
 
   a:hover {
-    color: #576EFF !important;
+    color: $theme-color-main !important;
   }
 
   section.about {
@@ -61,25 +61,25 @@ footer {
   section.links {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: $padding-unit-sm;
   }
 
   section.back-to-top {
     display: flex;
     flex-direction: column;
-    gap: 8.5px;
+    gap: $padding-unit-md;
     h4 {
       transform: rotate(-90deg);
       height: 96px;
       display: flex;
       align-items: center;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      color: #999DB7;
+      font-size: $fontsize-big;
+      line-height: $lineheight-base;
+      color: $color-text;
     }
     img {
-      height: 72px;
+      height: $fontsize-big*4;
     }
   }
 
@@ -100,17 +100,17 @@ footer {
 
     .socials {
       display: flex;
-      gap: 6px;
+      gap: $padding-unit-sm;
 
       .icon {
-        width: 38px;
-        height: 38px;
+        width: $fontsize-big*2;
+        height: $fontsize-big*2;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #11111B;
+        background-color: $theme-color-main;
         border-radius: 50%;
-        color: white;
+        color: $footer-text-color;
       }
 
       .icon:hover {

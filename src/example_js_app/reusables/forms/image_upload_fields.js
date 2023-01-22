@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useDropzone} from "react-dropzone";
 import {makeId} from "../utils";
-import Waiting, {WaitingInline} from "../../../components/Waiting";
+import Waiting from "../Waiting";
 
 export function FileUploadField(
     {

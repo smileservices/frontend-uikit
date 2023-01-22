@@ -1,5 +1,8 @@
+$info-icon-bg: $theme-color-main;
+$info-icon-text: $theme-color-text-c;
+
 .icon-info {
-  color: $color-text-c;
+  color: $info-icon-bg;
   margin-left: $padding-unit;
   cursor: pointer;
 }
@@ -12,9 +15,9 @@
   all: initial;
   display: inline-block;
   border-radius: 5px;
-  background-color: $color-background-3;
+  background-color: $info-icon-bg;
+  color: $info-icon-text;
   content: attr(data-tooltip);
-  color: $color-text-c2;
   position: absolute;
   bottom: 100%;
   width: $fontsize-md*15;
@@ -32,7 +35,7 @@
   height: 0;
   border-left: $padding-unit solid transparent;
   border-right: $padding-unit solid transparent;
-  border-top: $padding-unit solid $color-background-3;
+  border-top: $padding-unit solid $info-icon-bg;
   position: absolute;
   bottom: 100%;
   content: '';

@@ -1,5 +1,5 @@
 .overlay-waiting {
-  background-color: transparentize($color-background-4, 0.15);
+  background-color: transparentize($color-background-3, 0.15);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -23,6 +23,10 @@
 
 section.header {
   margin-bottom: $padding-unit-big*3;
+}
+
+.header {
+  margin-bottom: $padding-unit-big*2;
 }
 
 .alert {
@@ -65,7 +69,7 @@ section.header {
 
   > a.delete:hover {
     transition: color 0.5s ease-in-out;
-    color: $color-red;
+    color: $color-danger;
   }
 }
 
@@ -81,7 +85,7 @@ section.header {
     font-size: 0.9rem;
     padding: 0.5rem;
     border-radius: $radius-small;
-    color: $theme-color-main-c;
+    color: $theme-color-accent;
   }
 
   > span:hover {
@@ -94,29 +98,29 @@ section.header {
 
 
 .confirm {
-  color: $color-red;
+  color: $color-danger;
 
   .option {
     margin: 0.35rem;
   }
 
   .option:hover {
-    color: $theme-color-main-c;
-    border-bottom: 1px solid $theme-color-main-c;
+    color: $theme-color-accent;
+    border-bottom: 1px solid $theme-color-accent;
     cursor: pointer;
   }
 }
 
 .rating {
   font-size: $fontsize-sm;
-  color: $color-text-c;
+  color: $color-text-c1;
 
   a {
-    color: $theme-color-main-c;
+    color: $theme-color-accent;
   }
 
   .stars {
-    color: $color-yellow;
+    color: $color-careful;
     margin-right: $padding-unit-sm;
   }
 
@@ -139,16 +143,16 @@ section.header {
   }
 
   a, a:visited {
-    color: $color-text-c;
+    color: $color-text-c1;
   }
 
   a:hover {
-    color: $theme-color-main-c;
+    color: $theme-color-accent;
   }
 
   .voted {
     a, a:visited {
-      color: $theme-color-main-c;
+      color: $theme-color-accent;
     }
   }
 }
@@ -166,15 +170,15 @@ img {
 
 .read-more {
   margin-left: $padding-unit;
-  color: $theme-color-main-c;
+  color: $theme-color-accent;
   cursor: pointer;
 }
 
 .semi-footer {
   margin: $padding-unit-big*4 0 $padding-unit-big*2;
   padding: $padding-unit-big $padding-unit-md*2 $padding-unit-big*2;
-  background-color: $theme-color-main-c;
-  color: $color-text-c;
+  background-color: $theme-color-accent;
+  color: $color-text-c1;
   font-size: $fontsize-md;
   border-radius: $radius-big;
 
@@ -213,7 +217,7 @@ img {
 
     div {
       background-color: $color-background;
-      color: $color-text-c;
+      color: $color-text-c1;
       padding: 12px;
       border-radius: $radius-medium;
       display: flex;
@@ -234,19 +238,19 @@ img {
     }
 
     .sort-direction {
-      color: $color-text-c;
+      color: $color-text-c1;
       cursor: pointer;
     }
 
     .sort-direction:hover {
-      color: $theme-color-main-c;
+      color: $theme-color-accent;
     }
   }
 
 }
 
 .blue {
-  color: $theme-color-main-c;
+  color: $theme-color-accent;
 }
 
 .resource.sortableHelper {

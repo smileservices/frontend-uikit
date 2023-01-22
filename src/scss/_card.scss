@@ -1,88 +1,41 @@
 .card {
-    gap: 1rem;
+  gap: $padding-unit-md;
+  display: flex;
+  flex-direction: column;
+  background-color: $card-color-bg;
+  border-radius: $radius-big;
+  padding: $padding-unit-big;
+  justify-content: space-between;
+  position: relative;
+
+  .card-content {
     display: flex;
     flex-direction: column;
-    background-color: $color-background-1;
-    border-radius: $radius-big;
-    padding: 20px;
-    justify-content: space-between;
-    position: relative;
 
-    .card-content {
-        display: flex;
-        flex-direction: column;
-
-        .card-header {
-            margin-bottom: 12px;
-            .header-text {
-                font-size: 18px;
-                line-height: 22px;
-                font-weight: bold;
-                a, a:visited {
-                    color: $color-text-c;
-                }
-            }
-
-            .subheader-text {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 22px;
-                color: $color-text-c1;
-            }
-        }
-    
-        .card-description {
-            p {
-                font-size: 14px;
-                line-height: 22px;
-                color: $color-text-c1;
-                font-weight: 500;
-            }
-        }
-
-        .detailed-description {
-            display: flex;
-            flex-direction: column;
-            h3 {
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 22px;
-                color: $color-text-c;
-            }
-            p {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 22px;
-                color: $color-text-c1;
-    
-                a {
-                    color: $color-text-c2 !important;
-                }
-    
-                a:hover {
-                    cursor: pointer;
-                    color: $theme-color-main-c !important;
-                }
-            }
-        }
-    
-        .detailed-description-with-image {
-            display: flex;
-            margin-top: 1.5rem;
-            img {
-                margin-right: 18px;
-            }
-        }
+    .card-description {
+      font-size: $fontsize-md;
+      line-height: $lineheight-base;
+      color: $card-text-color;
     }
 
-    .card-footer {
-        flex-grow: 1;
-        display: flex;
-        align-items: flex-end;
+    .detailed-description-with-image {
+      display: flex;
+      margin-top: 1.5rem;
+
+      img {
+        margin-right: 18px;
+      }
     }
+  }
+
+  .card-footer {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .card .listing {
-    max-height: 260px;
-    max-width: 482px;
+  max-height: 260px;
+  max-width: 482px;
 }

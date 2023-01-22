@@ -2,6 +2,7 @@
   padding: $padding-unit*2 $padding-unit-big/2;
   padding-left: 0;
   line-height: $fontsize-big;
+  color: $theme-color-main !important;
 }
 
 nav {
@@ -14,6 +15,7 @@ nav {
   padding: $nav-padding;
   white-space: nowrap;
   background: $navbar-background;
+  color: $theme-color-main;
 
   grid-template-areas: "logo searchbar searchbar searchbar profile";
 
@@ -56,7 +58,7 @@ nav {
     display: inline-block;
     padding: $nav-padding;
     text-decoration: none;
-    color: $color-text-c;
+    color: $theme-color-main;
   }
 
   a.collapse-button {
@@ -68,19 +70,20 @@ nav {
   }
 
   a, a:visited, a:active {
-    color: $color-text-c;
+    color: $theme-color-main;
+
+    &:hover {
+      color: darken($theme-color-main, 20);
+    }
   }
 
   a > svg {
-    fill: $color-text-c;
-  }
+    fill: $theme-color-main;
 
-  a:hover {
-    color: $color-text-c;
-  }
+    &:hover {
+      fill: darken($theme-color-main, 20);
 
-  a:hover > svg {
-    fill: $color-text-c;
+    }
   }
 
   .left-side, .right-side {

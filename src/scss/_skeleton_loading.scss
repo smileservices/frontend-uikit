@@ -23,7 +23,7 @@
   &.review {
     height: $fontsize-md*9;
     background-color: $color-background;
-    background: linear-gradient(90deg, $color-background-5, transparent);
+    background: linear-gradient(90deg, $color-background-3, transparent);
   }
 
   &.post {
@@ -58,6 +58,6 @@
     width: $fontsize-big*9;
     height: $fontsize-big*2;
     background-color: $color-background-3;
-    background: linear-gradient(90deg, $color-background-5, transparent);
+    background: linear-gradient(90deg, $color-background-3, transparent);
   }
 }

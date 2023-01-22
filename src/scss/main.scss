@@ -8,7 +8,7 @@
 @import "node_modules/bootstrap/scss/mixins";
 //@import "node_modules/bootstrap/scss/utilities";
 
-@import "config";
+@import "config/config";
 
 body {
   font-family: 'Noto Sans', sans-serif;
@@ -24,7 +24,7 @@ body {
 @import "animations";
 @import "modal";
 
-@import "footer";
+@import "footer/footer";
 @import "forms/forms";
 @import "dropdowns";
 @import "layouts";
@@ -37,13 +37,13 @@ body {
 @import "sidebar/sidebar_fixed";
 
 @import "card";
-@import "footer_responsiveness";
-@import "sidebar_responsiveness";
+@import "sidebar/sidebar_responsiveness";
 @import "skeleton_loading";
-//@import "static_pages";
 @import "authentication";
 @import "notifications";
 @import "trees";
 @import "tags";
 
 @import "responsive";
+
+@import "template/elements";

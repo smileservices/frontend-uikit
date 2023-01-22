@@ -1,3 +1,11 @@
+$form-input-bg: $card-bg;
+$form-input-bg-focus: $card-bg;
+$form-input-text: $color-text-c1;
+$form-input-text-focus: $color-text;
+$form-input-border: $color-background-2;
+$form-input-border-focus: $theme-color-main;
+$form-input-radius: $radius-medium;
+
 .form-container {
   position: relative;
   background-color: $color-background-1;
@@ -90,7 +98,7 @@ form {
   .ss-single-selected, .ss-multi-selected {
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    border-radius: $radius-medium;
+    border-radius: $form-input-radius;
   }
 }
 

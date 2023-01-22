@@ -1,8 +1,7 @@
-import Waiting from "../../../components/Waiting";
-import Alert from "../../../components/Alert";
+import Waiting from "../Waiting";
+import Alert from "../Alert";
 import React from "react";
-import {makeId} from "../../../components/utils";
-import {bool} from "prop-types";
+import {makeId} from "../utils";
 
 export const SUBMIT_FORM_STATE = {
     response: {},
@@ -77,7 +76,7 @@ export function FormElement({callback, formState, buttonText = false, children})
             {buildAlert(formState.error)}
             {buildSuccess(formState.success)}
             <div className="buttons-container">
-                <button type="submit" className="btn light submit">{buttonText ? buttonText : 'Submit'}</button>
+                <button type="submit" className="btn">{buttonText ? buttonText : 'Submit'}</button>
             </div>
         </form>
     )
