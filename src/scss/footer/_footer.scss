@@ -7,7 +7,7 @@ footer {
   margin-top: $padding-unit-big*3;
   min-height: $padding-unit-big*15;
   padding: $padding-unit*6;
-  background-image: linear-gradient($footer-background, darken($footer-background, 10));
+  background-image: linear-gradient($footer-background, darken($footer-background, 5));
   color: $footer-text-color;
 
   .header {
