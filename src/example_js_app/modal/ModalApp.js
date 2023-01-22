@@ -18,7 +18,9 @@ function ModalApp() {
         <ModalComponent close={toggle_modal2}>
             <h2>Modal with Form</h2>
             <p>This is a reusable form.</p>
-            <CreateApp/>
+            <div className="form-container">
+                <CreateApp/>
+            </div>
         </ModalComponent>
 
 

@@ -10,11 +10,6 @@ $form-input-radius: $radius-medium;
   position: relative;
   background-color: $color-background-1;
   border-radius: $radius-big;
-
-  .header {
-    margin-bottom: $padding-unit-big*2;
-    border-bottom: 2px solid $color-background-3;
-  }
 }
 
 form {
@@ -26,6 +21,11 @@ form {
 
   > * {
     margin: 0;
+  }
+
+  .header {
+    margin-bottom: $padding-unit-big*2;
+    border-bottom: 2px solid $color-background-3;
   }
 
   .buttons-container {

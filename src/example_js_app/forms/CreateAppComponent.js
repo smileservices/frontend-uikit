@@ -40,6 +40,7 @@ export default function CreateApp() {
 
     return (
         <FormElement formState={formState} callback={submitCallback}>
+            <div className="header"><h2>Reusable Form</h2></div>
             {ExampleForm(formData, dispatchData)}
         </FormElement>
     );
