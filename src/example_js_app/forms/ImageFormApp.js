@@ -16,6 +16,10 @@ function ImageFormApp() {
 
     return (
         <FormElement formState={formState} callback={submitCallback}>
+            <div className="header">
+                <h3>Upload Files&Images</h3>
+                <p>We're using Dropzone to handle files uploads.</p>
+            </div>
             {ImageForm(formData, dispatchData)}
         </FormElement>
     );

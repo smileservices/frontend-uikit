@@ -40,7 +40,11 @@ export default function CreateApp() {
 
     return (
         <FormElement formState={formState} callback={submitCallback}>
-            <div className="header"><h2>Reusable Form</h2></div>
+            <div className="header">
+                <h3>Reusable Form</h3>
+                <p>This is a mini-app that handles validation, data normalization and submitting. It can be reused
+                    between apps, such as between creat and update.</p>
+            </div>
             {ExampleForm(formData, dispatchData)}
         </FormElement>
     );
