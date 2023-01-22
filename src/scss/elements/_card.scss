@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
 
+    .header {
+      margin-bottom: $padding-unit-big;
+    }
+
     .card-description {
       font-size: $fontsize-md;
       line-height: $lineheight-base;

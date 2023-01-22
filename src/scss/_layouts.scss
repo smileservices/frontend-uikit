@@ -119,6 +119,13 @@ section {
   }
 }
 
+.tile-container-flex {
+  display: flex;
+  gap: $padding-unit;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .spread-out-container {
   display: flex;
   flex-direction: row;
