@@ -8,9 +8,9 @@ $button-secondary-bg: $theme-color-accent;
 $button-secondary-text: $theme-color-text-ac;
 $button-secondary-hover-bg: darken($button-secondary-bg, 20);
 
-$button-light-bg: $theme-color-text-c;
+$button-light-bg: $color-background;
+$button-light-hover-bg: lighten($theme-color-main, 55);
 $button-light-text: $theme-color-main;
-$button-light-hover-bg: lighten($button-light-bg, 10);
 
 $button-dark-bg: $theme-color-text-ac;
 $button-dark-text: $theme-color-accent;
@@ -34,6 +34,10 @@ $button-dark-hover-bg: lighten($theme-color-text-ac, 10);
   background-color: $button-bg;
   color: $button-text;
 
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
   span.icon {
     font-size: $fontsize-sm;
     font-weight: 800 !important;
@@ -44,32 +48,29 @@ a.btn:visited {
   color: $button-text;
 }
 
-.btn:hover {
-  background-color: $button-hover-bg;
-}
-
 .btn.secondary {
   background-color: $button-secondary-bg;
   color: $button-secondary-text;
-}
 
-
-.btn.secondary:hover {
-  background-color: $button-secondary-hover-bg;
+  &:hover {
+    background-color: $button-secondary-hover-bg;
+  }
 }
 
 .btn.light {
   background-color: $button-light-bg;
+  border: 1px solid $button-light-text;
   color: $button-light-text;
-}
 
-.btn.light:hover {
-  background-color: $button-light-hover-bg;
+  &:hover {
+    background-color: $button-light-hover-bg;
+  }
 }
 
 .btn.success {
   background-color: $theme-color-clickme;
   color: $theme-color-text-c;
+
   &:hover {
     background-color: darken($theme-color-clickme, 10);
   }
@@ -77,6 +78,7 @@ a.btn:visited {
 
 .btn.danger {
   background-color: $theme-color-danger;
+
   &:hover {
     background-color: darken($theme-color-danger, 10);
   }
