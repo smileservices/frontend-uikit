@@ -27,33 +27,96 @@
       background-color: $theme-color-accent;
       color: $theme-color-text-ac;
     }
+
     &.card-bg {
       background-color: $card-color-bg;
       color: $card-text-color;
     }
+
     &.bg {
       background-color: $color-background;
       color: $color-text;
     }
+
     &.bg1 {
       background-color: $color-background-1;
       color: $color-text-c1;
     }
+
     &.bg2 {
       background-color: $color-background-2;
       color: $color-text-c2;
     }
+
     &.bg3 {
       background-color: $color-background-3;
       color: $color-text-c3;
     }
+
     &.bg4 {
       background-color: $color-background-3;
       color: $color-text-c3;
     }
+
     &.bg5 {
       background-color: $color-background-3;
       color: $color-text-c3;
+    }
+
+    &.success {
+      background-color: $theme-color-clickme;
+      color: $color-text-c3;
+    }
+
+    &.info {
+      background-color: $theme-color-info;
+      color: $color-text-c3;
+    }
+
+    &.careful {
+      background-color: $theme-color-alert;
+      color: $color-text-c3;
+    }
+
+    &.danger {
+      background-color: $theme-color-danger;
+      color: $color-text-c3;
+    }
+
+    &.text-primary {
+      background-color: $theme-color-text;
+    }
+
+    &.text-primary-contrast {
+      background-color: $theme-color-text-c;
+    }
+
+    &.text-accent {
+      background-color: $theme-color-text-a;
+    }
+
+    &.text-accent-contrast {
+      background-color: $theme-color-text-ac;
+    }
+
+    &.test-text-primary {
+      background: $color-background;
+      color: $theme-color-text;
+    }
+
+    &.test-text-primary-contrast {
+      background: $theme-color-main;
+      color: $theme-color-text-c;
+    }
+
+    &.test-text-accent {
+      background: $color-background;
+      color: $theme-color-text-a;
+    }
+
+    &.test-text-accent-contrast {
+      background: $theme-color-accent;
+      color: $theme-color-text-ac;
     }
   }
 }

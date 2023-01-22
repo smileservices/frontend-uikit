@@ -4,11 +4,12 @@ $theme-color-accent: #1f4fa3;
 
 //colors text
 $theme-color-text: darken(desaturate($theme-color-main, 55), 10);
-$theme-color-text-c: #ffffe6;
-$theme-color-text-ac: #f7f9ff;
+$theme-color-text-c: lighten(desaturate($theme-color-main, 35), 55);
+$theme-color-text-a: darken(desaturate($theme-color-accent, 55), 10);
+$theme-color-text-ac: lighten(desaturate($theme-color-accent, 35), 60);
 
 //colors functional
-$theme-color-clickme: green;
+$theme-color-clickme: #198619;
 $theme-color-info: #4195f5;
 $theme-color-alert: #ff9305;
 $theme-color-danger: #f31a1a;

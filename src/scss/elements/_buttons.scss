@@ -53,6 +53,7 @@ a.btn:visited {
   color: $button-secondary-text;
 }
 
+
 .btn.secondary:hover {
   background-color: $button-secondary-hover-bg;
 }
@@ -66,11 +67,11 @@ a.btn:visited {
   background-color: $button-light-hover-bg;
 }
 
-.btn.dark {
-  background-color: $button-dark-bg;
-  color: $button-dark-text;
+.btn.success {
+  background-color: $theme-color-clickme;
+  color: $theme-color-text-c;
   &:hover {
-    background-color: $button-dark-hover-bg;
+    background-color: darken($theme-color-clickme, 10);
   }
 }
 
