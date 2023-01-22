@@ -12,7 +12,8 @@ $form-input-radius: $radius-medium;
   border-radius: $radius-big;
 
   .header {
-    margin-bottom: 2rem;
+    margin-bottom: $padding-unit-big*2;
+    border-bottom: 2px solid $color-background-3;
   }
 }
 
@@ -76,7 +77,8 @@ form {
   .form-group.row {
     display: flex;
     flex-direction: row;
-    gap: 0.3rem;
+    align-items: baseline;
+    gap: $padding-unit-big;
   }
 
   .invalid-feedback {
