@@ -20,7 +20,7 @@ module.exports = (env, argv) => ({
     },
     output: {
         filename: '[name].js',
-        path: __dirname + '/static/js/'
+        path: __dirname + '/static/uikit/js/'
     },
     module: {
         rules: [

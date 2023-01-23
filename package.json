@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "css": "node-sass --output-style compressed src/scss/main.scss -o static/css/"
+    "css": "node-sass --output-style compressed src/scss/main.scss -o static/uikit/css/"
   },
   "keywords": [],
   "author": "",
