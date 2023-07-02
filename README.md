@@ -5,6 +5,7 @@ Using ReactJS mini-apps with custom .css
 We are using webpack to pack .js files and .scss files into bundles. The setting for webpack is in `/webpack.config.js`
 
 To install:
+- set up nvm: `nvm use v16.13.0`
 - install deps: `npm install`
 
 To build .js bundles:

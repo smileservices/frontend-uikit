@@ -9,7 +9,7 @@ module.exports = (env, argv) => ({
         // for dev
         'react-bundle': argv.mode === 'production'
             ? ['./static/uikit/react_files/react.min.js', './static/uikit/react_files/react-dom.min.js']
-            : ['./static//uikit/react_files/react.development.js', './static/uikit/react_files/react-dom.development.js'],
+            : ['./static/uikit/react_files/react.development.js', './static/uikit/react_files/react-dom.development.js'],
 
         //mapping of <js file destination>: <react source>
         'forms_create_javascript_app': './src/example_js_app/forms/CreateApp.js',
