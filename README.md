@@ -17,3 +17,5 @@ To build main.css bundle:
 
 To serve locally the app:
 - `make run-server`
+
+Can access at `localhost:8080`

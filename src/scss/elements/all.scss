@@ -7,11 +7,12 @@
 @import "pagination";
 @import "trees";
 @import "dropdowns";
+@import "list_items";
 
 .overlay-waiting {
   background-color: transparentize(
-                    lighten(desaturate($theme-color-main, 50), 30),
-                  0.15);
+                    lighten(desaturate($theme-color-main, 30), 30),
+                  0.5);
   position: absolute;
   width: 100%;
   height: 100%;

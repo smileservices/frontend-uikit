@@ -17,6 +17,7 @@ body.modal-open {
 }
 
 .modal {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,6 +39,7 @@ body.modal-open {
 .modal > div:first-child {
   margin: 1.75rem auto;
   flex-grow: 1;
+  min-height: 5rem;
 }
 
 .modal-content.has-toolbar {

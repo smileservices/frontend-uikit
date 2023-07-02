@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/uikit/css/main.css">
+    <link rel="stylesheet" href="/uikit/icomoon_fonts/style.css">
+
+</head>
+<body>
+
+<nav>
+    <div class="left-side" id="nav-logo">
+        <a rel="nofollow noopener" href="#" class="collapse-button" onclick="toggle_sidebar()">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </a>
+        <a class="navbar-logo" href="/uikit">UI.kit</a>
+    </div>
+    <div id="profile-app">
+        <div class="dropdown">
+            <span class="dropdown-button">
+                <span class="dropdown-button-icon icon-person-circle"></span>
+            </span>
+        </div>
+    </div>
+</nav>
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar">
+        <div id="sidebar-app">
+            <div class="categories">
+                <div class="top-section"><a href="/uikit" class="navbar-logo">UI.kit</a>
+                    <a href="#" onclick="toggle_sidebar()" rel="nofollow noopener" class="collapse-button">
+                        <span class="icon-close close-icon"></span>
+                    </a>
+                </div>
+                <h3 class="sidebar-title">Sidebar Section</h3>
+
+                <ul class="tree">
+                    <li><span class="icon-arrow_drop_down expander"></span>
+                        <div class=" parent expanded "><span>Cards</span><span>1</span></div>
+                    </li>
+                    <li class="children">
+                        <ul class="tree">
+                            <li>
+                                <div class="has-parent-margin parent"><span><a
+                                        href="/uikit/pages/cards.html">Containers</a></span><span></span></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="tree">
+                    <li><span class="icon-arrow_drop_down expander"></span>
+                        <div class=" parent expanded "><span>Elements</span><span>1</span></div>
+                    </li>
+                    <li class="children">
+                        <ul class="tree">
+                            <li>
+                                <div class="has-parent-margin parent"><span><a href="/uikit/pages/login.html">Login</a></span><span></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="tree">
+                    <li>
+                        <span class="icon-arrow_drop_down expander"></span>
+                        <div class=" parent expanded "><span>Forms</span><span>3</span></div>
+                    </li>
+                    <li class="children">
+                        <ul class="tree">
+                            <li>
+                                <div class="has-parent-margin parent">
+                                    <span><a href="/uikit/pages/forms/forms.html">Form Container</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="has-parent-margin parent">
+                                    <span><a href="/uikit/pages/forms/inputs.html">Form Inputs</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="has-parent-margin parent">
+                                    <span><a href="/uikit/pages/forms/react-forms.html">React Forms</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="has-parent-margin parent">
+                                    <span><a href="/uikit/pages/forms/image-forms.html">Form with image upload</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="tree">
+                    <li>
+                        <span class="icon-arrow_drop_down expander"></span>
+                        <div class=" parent expanded "><span>Modals</span><span>1</span></div>
+                    </li>
+                    <li class="children">
+                        <ul class="tree">
+                            <li>
+                                <div class="has-parent-margin parent">
+                                    <span><a href="/uikit/pages/modals.html">React Modals</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</aside>
+
+
+<main>
+    <section class="header">
+        <h1>The Inputs</h1>
+    </section>
+
+    <div class="breadcrumbs">
+        <a href="/uikit">Homepage</a> &gt; Form > Inputs
+    </div>
+
+    <section class="full-page-md">
+        <div class="card">
+            <div class="form-container" id="login-app"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <section class="about column-container">
+        <div class="header">
+            <h3>UI kit Footer</h3>
+            <p>Enjoy having all the elements into one place.</p>
+        </div>
+        <div class="button-links-container">
+            <a href="https://www.facebook.com/groups/noodles.dev" rel="nofollow noopener"
+               class="uikit-button filled default">
+                Join our Facebook Group!
+            </a>
+            <a href="/backstage" rel="nofollow noopener" class="uikit-button outlined white">
+                Some CTA
+            </a>
+        </div>
+    </section>
+
+    <section class="links column-container">
+        <h4 class="header">UI Kit</h4>
+        <a href=#>About</a>
+        <a href=#>Technologies</a>
+        <a href=#>General Concepts</a>
+        <a href=#>Implementation Concepts</a> <a href=#>Resources</a>
+        <a href=#>Collections</a>
+    </section>
+
+    <section class="social column-container">
+        <div class="links">
+            <h4 class="header">Links</h4>
+            <a href=# rel="nofollow noopener">Privacy Policy</a>
+            <a href=# rel="nofollow noopener">Terms and Conditions</a>
+            <a href=# rel="nofollow noopener">Cookies Policy</a>
+        </div>
+        <div class="socials">
+            <a href="#"><span class="icon icon-facebook"></span></a>
+            <span class="icon icon-twitter"></span>
+            <a href="#"><span class="icon icon-linkedin"></span></a>
+            <span class="icon icon-telegram1"></span>
+            <span class="icon icon-reddit-alien"></span>
+        </div>
+    </section>
+</footer>
+<script src="/uikit/js/react-bundle.js"></script>
+<script src="/uikit/js/elements_login_app.js"></script>
+<script>
+
+    window.addEventListener('load', e => {
+        document.querySelectorAll('.collapsible .collapse-toggle').forEach(el => el.onclick = evt => {
+            evt.preventDefault();
+            evt.target.closest('.collapsible').classList.toggle('show');
+        });
+    });
+
+    function toggle_sidebar() {
+        if (innerWidth > 600) {
+            document.querySelector('body').classList.toggle('sidebar-visible');
+        } else {
+            document.querySelector('body').classList.toggle('sidebar-visible-mobile');
+        }
+    }
+
+</script>
+</body>
+</html>

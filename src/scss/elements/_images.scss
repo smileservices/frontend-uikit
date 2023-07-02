@@ -9,6 +9,11 @@ img {
   border-radius: $radius-medium;
 }
 
+.img-thumbnail {
+  width: 2.5*$fontsize-big;
+  height: 2.5*$fontsize-big;
+}
+
 .file-container {
   position: relative;
   display: flex;
@@ -19,4 +24,12 @@ img {
   border-radius: $radius-medium;
   background-color: $theme-color-main;
   color: $theme-color-text-c;
+
+  * {
+    padding: $padding-unit-md;
+    color: $color-background;
+    font-size: $fontsize-big;
+  }
+
 }
+
